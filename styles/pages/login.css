@@ -32,3 +32,9 @@
   height: 3px;
   background-color: blue;
 }
+
+.notUser {
+  padding-top: 24px;
+  align-items: center;
+  gap: 14px;
+}

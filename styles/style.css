@@ -1,25 +1,27 @@
 /* STYLE FOR TEMPLATES */
 header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .join-icon {
-  width: 50px;
+    width: 55px;
+    height: 80px;
+    margin: 24px;
 }
 
 .sign-in {
-  align-items: center;
-  gap: 18px;
+    align-items: center;
+    gap: 18px;
 }
 
 .sign-up {
-  height: 50px;
-  border-radius: 8px;
-  width: 100px;
-  color: #fff;
-  background-color: #2a3647;
+    height: 50px;
+    border-radius: 8px;
+    width: 100px;
+    color: #fff;
+    background-color: #2a3647;
 }
 
 .button {
