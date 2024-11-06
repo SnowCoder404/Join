@@ -7,3 +7,26 @@
 body {
   background-color: #f6f7f8;
 }
+
+main {
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+  gap: 36px;
+}
+
+.bg-blue {
+  background-color: #2a3647;
+}
+
+.color-white {
+  color: white;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.w-100 {
+  width: 100%;
+}

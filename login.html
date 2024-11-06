@@ -7,6 +7,10 @@
     <title>Join</title>
     <link rel="shortcut icon" href="./assets/icon/icon.svg" type="image/x-icon">
     <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/base.css">
+    <link rel="stylesheet" href="./styles/flexbox.css">
+    <link rel="stylesheet" href="./styles/pages/login.css">
+    <link rel="stylesheet" href="./styles/media_query.css">
     <script src="./scripts/template.js"></script>
     <script src="./scripts/script.js"></script>
 </head>
@@ -14,36 +18,36 @@
 <body onload="init()">
     <header id="header"></header>
     <main class="d_flex_c">
-        <div class="formDiv">
-            <form class="text-center login-form w-100">
-                <div class="d_flex_c">
-                    <div style="width: 150px;">
-                        <h1>Log in</h1>
-                        <div class="separator"></div>
+        <div>
+            <div class="formDiv">
+                <form class="text-center login-form w-100">
+                    <div class="d_flex_c">
+                        <div style="width: 150px;">
+                            <h1>Log in</h1>
+                            <div class="separator"></div>
+                        </div>
                     </div>
+                    <div id="email" class="d_flex">
+                        <input type="email" placeholder="E-Mail" class="text-center w-100">
+                        <img src="" alt="">
+                    </div>
+                    <div id="password" class="d_flex">
+                        <input type="password" placeholder="Password" class="text-center w-100">
+                        <img src="" alt="">
+                    </div>
+                    <div id="checkboxContainer" style="text-align: initial;">
+                        <input type="checkbox">
+                        <span>Remember me</span>
+                    </div>
+                    <div class="buttonDiv">
+                        <button onclick="loginUser()" class="button bg-blue color-white sign-up">Log in</button>
+                        <button onclick="guestLogin()" class="button">Guest Log in</button>
+                    </div>
+                </form>
+                <div class="hiddenMin d_flex" style="padding-top: 24px;">
+                    <a><span>Not a Join user ?</span></a> 
+                    <button class="bg-blue color-white sign-up">Sign up</button>
                 </div>
-         
-              
-                <div id="email" class="d_flex">
-                    <input type="email" placeholder="E-Mail" class="text-center w-100">
-                    <img src="" alt="">
-                </div>
-                <div id="password" class="d_flex">
-                    <input type="password" placeholder="Password" class="text-center w-100">
-                    <img src="" alt="">
-                </div>
-                <div id="checkboxContainer" style="text-align: initial;">
-                    <input type="checkbox">
-                    <span>Remember me</span>
-                </div>
-                <div class="buttonDiv">
-                    <button onclick="loginUser()" class="button bg-blue color-white sign-up">Log in</button>
-                    <button onclick="" class="button">Guest Log in</button>
-                </div>
-            </form>
-            <div class="hiddenMin d_flex" style="padding-top: 24px;">
-                <a><span>Not a Join user ?</span></a> 
-                <button class="bg-blue color-white sign-up">Sign up</button>
             </div>
         </div>
     </main>

@@ -6,3 +6,7 @@ function init() {
 function loginUser() {
 
 }
+
+function guestLogin() {
+    
+}
