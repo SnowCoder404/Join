@@ -28,3 +28,7 @@
   width: 400px;
 }
 
+.separator {
+  height: 3px;
+  background-color: blue;
+}
