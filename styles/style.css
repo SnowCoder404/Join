@@ -1,0 +1,28 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.image {
+    width: 50px;
+}
+
+.sign-in {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.sign-up {
+    height: 50px; 
+    border-radius: 8px;
+}
+
+.bg-blue {
+    background-color: #2a3647;
+}
+
+.color-white {
+    color: white;
+}
