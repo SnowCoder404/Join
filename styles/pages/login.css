@@ -12,12 +12,12 @@
   background-color: #ffffff;
   padding: 54px;
   border-radius: 18px;
+}
 
-  input {
+.input {
     width: 100%;
     text-align: center;
   }
-}
 
 .button {
   width: 120px;
