@@ -74,9 +74,20 @@ header {
 .w-100 {
     width: 100%;
 }
+ 
+.formDiv {
+    width: 400px;
+}
 
 @media (max-width: 600px) {
     #joinUser {
         display: none !important;
+    }
+    .buttonDiv {
+        flex-direction: column;
+        align-items: center;
+    }
+    .formDiv {
+        display: flex;
     }
 }
