@@ -2,8 +2,15 @@ body {
     background-color: #f6f7f8;
 }
 
-.d_none {
-    display: none;
+main {
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    gap: 36px;
+}
+
+.d_flex {
+    display: flex;
 }
 
 .d_flex_c {
@@ -27,8 +34,9 @@ header {
 }
 
 .sign-up {
-    height: 50px; 
+    height: 50px;
     border-radius: 8px;
+    width: 100px;
 }
 
 .bg-blue {
@@ -39,10 +47,10 @@ header {
     color: white;
 }
 
-.button {
+.buttonDiv {
     display: flex;
-    flex-direction: column;
-    gap: 12px;
+    justify-content: space-around;
+    gap: 22px;
 }
 
 .text-center {
@@ -56,6 +64,15 @@ header {
     background-color: #FFFFFF;
     padding: 54px;
     border-radius: 18px;
+}
+
+.button {
+    width: 120px;
+    height: 40px;
+}
+
+.w-100 {
+    width: 100%;
 }
 
 @media (max-width: 600px) {
