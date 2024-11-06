@@ -21,3 +21,69 @@ header {
   color: #fff;
   background-color: #2a3647;
 }
+<<<<<<< HEAD
+=======
+
+.bg-blue {
+    background-color: #2a3647;
+}
+
+.color-white {
+    color: white;
+}
+
+.buttonDiv {
+    display: flex;
+    justify-content: space-around;
+    gap: 22px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    background-color: #FFFFFF;
+    padding: 54px;
+    border-radius: 18px;
+}
+
+.button {
+    width: 120px;
+    height: 40px;
+}
+
+.w-100 {
+    width: 100%;
+}
+ 
+.formDiv {
+    width: 400px;
+}
+
+@media (max-width: 600px) {
+    .hidden {
+        display: none !important;
+    }
+    .buttonDiv {
+        flex-direction: column;
+        align-items: center;
+    }
+    .formDiv {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 200px;
+    }
+}
+
+@media (min-width: 600px) {
+    .hiddenMin {
+        display: none !important;
+    }
+    
+}
+>>>>>>> 5a67f1d9e45a79e74a93ddb3ace48ea425622274
