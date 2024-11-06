@@ -2,8 +2,8 @@ function showHeader() {
     return `<div>
                 <img src="./assets/icon/icon.svg" class="image" alt="Join">
             </div>
-            <div>
+            <div class="sign-in">
                 <span>Not a Join user ?</span>
-                <button>Sign up</button>
+                <button class="bg-blue color-white sign-up ">Sign up</button>
             </div>`;
 }
