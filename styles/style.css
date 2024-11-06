@@ -9,6 +9,11 @@ main {
     gap: 36px;
 }
 
+.separator {
+    background-color: #5fc0e9; 
+    height: 3px
+}
+
 .d_flex {
     display: flex;
 }
@@ -80,7 +85,7 @@ header {
 }
 
 @media (max-width: 600px) {
-    #joinUser {
+    .hidden {
         display: none !important;
     }
     .buttonDiv {
@@ -89,5 +94,15 @@ header {
     }
     .formDiv {
         display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 200px;
     }
+}
+
+@media (min-width: 600px) {
+    .hiddenMin {
+        display: none !important;
+    }
+    
 }
