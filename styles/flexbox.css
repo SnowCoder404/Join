@@ -1,0 +1,8 @@
+.d_flex {
+  display: flex;
+}
+
+.d_flex_c {
+  display: flex;
+  justify-content: center;
+}

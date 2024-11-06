@@ -1,93 +1,23 @@
-body {
-    background-color: #f6f7f8;
-}
-
-main {
-    align-items: center;
-    height: 100vh;
-    flex-direction: column;
-    gap: 36px;
-}
-
-.d_flex {
-    display: flex;
-}
-
-.d_flex_c {
-    display: flex;
-    justify-content: center;
-}
-
+/* STYLE FOR TEMPLATES */
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.image {
-    width: 50px;
+.join-icon {
+  width: 50px;
 }
 
 .sign-in {
-    align-items: center;
-    gap: 18px;
+  align-items: center;
+  gap: 18px;
 }
 
 .sign-up {
-    height: 50px;
-    border-radius: 8px;
-    width: 100px;
-}
-
-.bg-blue {
-    background-color: #2a3647;
-}
-
-.color-white {
-    color: white;
-}
-
-.buttonDiv {
-    display: flex;
-    justify-content: space-around;
-    gap: 22px;
-}
-
-.text-center {
-    text-align: center;
-}
-
-.login-form {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-    background-color: #FFFFFF;
-    padding: 54px;
-    border-radius: 18px;
-}
-
-.button {
-    width: 120px;
-    height: 40px;
-}
-
-.w-100 {
-    width: 100%;
-}
- 
-.formDiv {
-    width: 400px;
-}
-
-@media (max-width: 600px) {
-    #joinUser {
-        display: none !important;
-    }
-    .buttonDiv {
-        flex-direction: column;
-        align-items: center;
-    }
-    .formDiv {
-        display: flex;
-    }
+  height: 50px;
+  border-radius: 8px;
+  width: 100px;
+  color: #fff;
+  background-color: #2a3647;
 }
