@@ -1,3 +1,7 @@
+body {
+    background-color: #f6f7f8;
+}
+
 .d_none {
     display: none;
 }
@@ -41,8 +45,17 @@ header {
     gap: 12px;
 }
 
-.text_center {
+.text-center {
     text-align: center;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    background-color: #FFFFFF;
+    padding: 54px;
+    border-radius: 18px;
 }
 
 @media (max-width: 600px) {
