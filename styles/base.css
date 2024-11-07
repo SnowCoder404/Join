@@ -7,6 +7,7 @@
 
 body {
   background-color: #f6f7f8;
+  display: flex;
 }
 
 .app-main {
@@ -20,7 +21,7 @@ body {
     background-color: orange;
   }
 
-  & > div {
+  .container {
     margin: 3.2rem 8rem;
     background-color: yellowgreen;
   }

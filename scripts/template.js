@@ -28,8 +28,8 @@ function getSidebarHTML(pageName) {
         </a>
       </div>
       <div class="privacy-container">
-        <a href="#">Privacy Policy</a>
-        <a href="#">Legal notice</a>
+        <a href="privacy_policy.html">Privacy Policy</a>
+        <a href="legal_notice.html">Legal notice</a>
       </div>
   `;
 }
