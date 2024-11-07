@@ -9,14 +9,24 @@ body {
     background-color: #f6f7f8;
 }
 
-
-
 .bg-blue {
     background-color: #2a3647;
 }
 
+.bg-light-blue {
+    background-color: rgb(41, 171, 226);
+}
+
 .color-white {
     color: white;
+}
+
+.color-blue {
+    color: #2a3647;
+}
+
+.color-light-blue {
+    background-color: rgb(41, 171, 226);
 }
 
 .text-center {

@@ -10,11 +10,12 @@
   <link rel="stylesheet" href="../styles/pages/summary.css">
   <link rel="stylesheet" href="../styles/flexbox.css">
   <link rel="stylesheet" href="../styles/base.css">
+  <link rel="stylesheet" href="../styles/style.css">
 </head>
 
 <body>
 
-  <div class="d_flex_row">
+  <div id="seperator_div" class="d_flex_row">
 
     <aside class="sidebar">
       <img class="logo" src="../assets/img/logo-white.png" alt="logo" />
@@ -50,20 +51,56 @@
       </div>
     </aside>
 
-    <div class="d_flex_row">
+    <div id="header_and_content" class="d_flex_column">
 
-      <header>hier kommt der <header></header>
-      </header>
+      <div>hier kommt der header<div>
 
-      <div class="d_flex_align_c page_title_div">
-        <h1 class="title d_flex_align_c">Join 360</h1>
-        <div class="vertical_seperator"></div>
-        <span class="title_second color-blue">Key metrics a Glance</span>
+          <div id="title_div" class="d_flex_align_c page_title_div">
+            <h1 class="title d_flex_align_c">Join 360</h1>
+            <div class="vertical_seperator"></div>
+            <span class="title_second color-blue">Key metrics a Glance</span>
+          </div>
+
+          <div id="summary_content">
+
+            <div class="todo_and_done">
+
+              <div class="todo-done_div">
+                <img src="../assets/icon/summary_todo.png" alt="">
+                <div class="number_and_name">
+                  <span>anzahl</span>
+                  <span>to-do</span>
+                </div>
+              </div>
+
+              <div class="todo-done_div">
+                <img src="../assets/icon/summary_done.png" alt="">
+                <div class="number_and_name">
+                  <span>anzahl</span>
+                  <span>done</span>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="urgent_todos_div">
+              <div class="urgent_todo">
+                icon
+                Urgent
+                anzahl
+              </div>
+              <div class="upcomming_deadline">datum</div>
+            </div>
+          </div>
+
+        </div>
+
       </div>
-
     </div>
 
-  </div>
+
+
+
 
 
 </body>
