@@ -24,7 +24,7 @@ body {
   }
 
   .container {
-    margin: 3.2rem 8rem;
+    margin: 32px 80px;
     background-color: yellowgreen;
   }
 }
