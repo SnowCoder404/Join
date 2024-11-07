@@ -6,3 +6,13 @@
   display: flex;
   justify-content: center;
 }
+
+.d_flex_align_c {
+  display: flex;
+  align-items: center;
+}
+
+.d_flex_row {
+  display: flex;
+  flex-direction: row;
+}

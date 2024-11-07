@@ -1,0 +1,29 @@
+
+.page_title_div {
+    flex-direction: row;
+
+    height: 73px;
+    width: 625px;
+    gap: 30px;
+}
+
+.vertical_seperator {
+    height: 59px;
+    width: 0;
+    border: 3px;
+    border-color: rgb(41, 171, 226);
+    border-style: solid;
+    border-radius: 50px;
+}
+
+.title {
+    height: 73px;
+    font-size: 61px;
+    font-weight: 700;
+}
+
+.title_second {
+    height: 32px;
+    font-weight: 400;
+    font-size: 27px;
+}
