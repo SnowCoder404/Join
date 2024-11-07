@@ -44,7 +44,7 @@
                 <h1 style="margin-bottom: 12px;">Add Task</h1>
                 <div>
                     <div class="flex">
-                        <span>Title <span class="color-red">*</span></span>
+                        <span>Title<span class="color-red">*</span></span>
                         <input type="text" placeholder="Enter a title" class="input-task">
                     </div>
                     <div class="flex">
@@ -53,20 +53,35 @@
                     </div>
                     <div class="flex">
                         <span>Assigned to</span>
-                        
+                        <input type="text">
                     </div>
                 </div>
                 <span>
-                    <span class="color-red">*</span> This field is required
+                    <span class="color-red">*</span>This field is required
                 </span>
             </div>
             <div class="separator"></div>
             <div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
+                <div class="flex">
+                    <span>Due date<span class="color-red">*</span></span>
+                    <input type="date" class="input-task">
+                </div>
+                <div class="flex">
+                    <span>Prio</span>
+                    <div>
+                        <button class="prio-button">Urgent</button>
+                        <button class="prio-button">Medium</button>
+                        <button class="prio-button">Low</button>
+                    </div>
+                </div>
+                <div class="flex">
+                    <span>Category</span>
+                    <input type="text">
+                </div>
+                <div class="flex">
+                    <span>Subtasks</span>
+                    <input type="text">
+                </div>
                 <div>
                     <button onclick="clear()" class="bg-blue clear-and-create-button">Clear</button>
                     <button class="bg-blue clear-and-create-button">Create Task</button>
