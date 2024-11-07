@@ -55,6 +55,11 @@ header {
     img {
       width: 25px;
     }
+
+    span {
+      color: #fff;
+      font-size: 15px;
+    }
   }
 
   .navigation {
@@ -86,11 +91,6 @@ header {
 
   .logo {
     width: 80px;
-  }
-
-  p {
-    color: #fff;
-    font-size: 15px;
   }
 
   .privacy-container {
