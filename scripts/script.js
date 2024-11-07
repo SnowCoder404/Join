@@ -1,3 +1,8 @@
+
+function loadSidebar() {
+    document.getElementById("sidebar").innerHTML = sidebarShow();
+}
+
 function renderTemplates(pageName) {
   const sidebarElement = document.querySelector('.sidebar');
   const headerElement = document.querySelector('.header');

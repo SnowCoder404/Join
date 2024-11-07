@@ -3,80 +3,90 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Join</title>
-    <link rel="shortcut icon" href="./assets/icon/icon.svg" type="image/x-icon" />
+    <title>Add Task</title>
+    <link rel="shortcut icon" href="../assets/icon/icon.svg" type="image/x-icon" />
     <link rel="stylesheet" href="../styles/pages/add_task.css" />
     <link rel="stylesheet" href="../styles/pages/board.css" />
     <link rel="stylesheet" href="../styles/flexbox.css" />
     <link rel="stylesheet" href="../styles/base.css" />
     <link rel="stylesheet" href="../styles/style.css" />
-    <script src="../scripts/template.js" defer></script>
-    <script src="../scripts/script.js" defer></script>
-    <script src="../scripts/add_task.js" defer></script>
+    <script src="../scripts/template.js"></script>
+    <script src="../scripts/script.js"></script>
+    <script src="../scripts/add_task.js"></script>
   </head>
-  <body onload="loadTask(); renderTemplates('add_task');" class="d_flex">
-    <aside class="sidebar"></aside>
-
-    <main class="app-main" style="color: black">
-      <header class="header">
-        <h1>Kanban Project Management Tool</h1>
-        <div class="profile">
-          <img class="help-icon" src="../assets/icon/help.png" alt="help icon" />
-          <span>MS</span>
-        </div>
-
-      <div class="container">
-        <div>
-           <!-- Here comes your content -->
-          <h1 style="margin-bottom: 12px">Add Task</h1>
-          <div>
-            <div class="flex">
-              <span>Title<span class="color-red">*</span></span>
-              <input type="text" placeholder="Enter a title" class="input-task" required />
-            </div>
-            <div class="flex">
-              <span>Description</span>
-              <input type="text" placeholder="Enter a Description" class="input-task" />
-            </div>
-            <div class="flex">
-              <span>Assigned to</span>
-              <input type="text" />
-            </div>
-          </div>
-          <span><span class="color-red">*</span> This field is required</span>
-        </div>
-        <div class="separator"></div>
-        <div>
-          <div class="flex">
-            <span>Due date<span class="color-red">*</span></span>
-            <input type="date" class="input-task" required />
-          </div>
-          <div class="flex">
-            <span>Prio</span>
+  <body onload="loadTask();" class="d_flex">
+    <div class="d_flex_c_c w-100">
+      <aside id="sidebar" class="sidebar"></aside>
+      <main class="d_flex_c w-100 main">
+        <form class="d_flex" style="flex-direction: column">
+          <div class="d_flex_c">
             <div>
-              <button id="urgent" class="prio-button" onclick="checkThePrioOfTask(1);">
-                Urgent
-              </button>
-              <button id="medium" class="prio-button" onclick="checkThePrioOfTask(2);">
-                Medium
-              </button>
-              <button id="low" class="prio-button" onclick="checkThePrioOfTask(3);">Low</button>
+              <h1 style="margin-bottom: 12px">Add Task</h1>
+              <div>
+                <div class="flex">
+                  <span>Title<span class="color-red">*</span></span>
+                  <input
+                    id="title"
+                    type="text"
+                    placeholder="Enter a title"
+                    class="input-task"
+                    required
+                  />
+                </div>
+                <div class="flex">
+                  <span>Description</span>
+                  <input
+                    id="description"
+                    type="text"
+                    placeholder="Enter a Description"
+                    class="input-task"
+                  />
+                </div>
+                <div class="flex">
+                  <span>Assigned to</span>
+                  <input type="text" />
+                </div>
+              </div>
+            </div>
+            <div class="separator"></div>
+            <div style="margin: 46px 10px">
+              <div class="flex">
+                <span>Due date<span class="color-red">*</span></span>
+                <input id="date" type="date" class="input-task" required />
+              </div>
+              <div class="flex">
+                <span>Prio</span>
+                <div class="d_flex">
+                  <button id="urgent" class="prio-button" onclick="checkThePrioOfTask(1);">
+                    Urgent
+                  </button>
+                  <button id="medium" class="prio-button" onclick="checkThePrioOfTask(2);">
+                    Medium
+                  </button>
+                  <button id="low" class="prio-button" onclick="checkThePrioOfTask(3);">Low</button>
+                </div>
+              </div>
+              <div class="flex">
+                <span>Category</span>
+                <input type="text" />
+              </div>
+              <div class="flex">
+                <span>Subtasks</span>
+                <input type="text" />
+              </div>
             </div>
           </div>
-          <div class="flex">
-            <span>Category</span>
-            <input type="text" />
-          </div>
-          <div class="flex">
-            <span>Subtasks</span>
-            <input type="text" />
-          </div>
+        </form>
+        <div class="d_flex buttonTaskDiv">
+          <span> <span class="color-red">*</span>This field is required </span>
           <div>
-            <button onclick="clear()" class="bg-blue clear-and-create-button">Clear</button>
-            <button class="bg-blue clear-and-create-button">Create Task</button>
+            <button onclick="clear();" class="bg-blue clear-and-create-button">Clear</button>
+            <button onclick="createNewTask();" class="bg-blue clear-and-create-button">
+              Create Task
+            </button>
           </div>
         </div>
-      </div>
-    </main>
+      </main>
+    </div>
   </body>
 </html>
