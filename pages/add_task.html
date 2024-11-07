@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../styles/pages/add_task.css">
     <link rel="stylesheet" href="../styles/pages/board.css">
     <link rel="stylesheet" href="../styles/flexbox.css">
+    <link rel="stylesheet" href="../styles/base.css">
 </head>
 <body>
     <header></header>
@@ -44,11 +45,11 @@
                 <div>
                     <div class="flex">
                         <span>Title <span class="color-red">*</span></span>
-                        <input type="text" placeholder="Enter a title">
+                        <input type="text" placeholder="Enter a title" class="input-task">
                     </div>
                     <div class="flex">
                         <span>Description</span>
-                        <input type="text" placeholder="Enter a Description">
+                        <input type="text" placeholder="Enter a Description" class="input-task">
                     </div>
                     <div class="flex">
                         <span>Assigned to</span>
@@ -67,8 +68,8 @@
                 <div></div>
                 <div></div>
                 <div>
-                    <button>Clear</button>
-                    <button>Create Task</button>
+                    <button onclick="clear()" class="bg-blue clear-and-create-button">Clear</button>
+                    <button class="bg-blue clear-and-create-button">Create Task</button>
                 </div>
             </div>
         </main>

@@ -28,6 +28,7 @@ main {
     flex-direction: column;
     gap: 3px;
     margin-bottom: 12px;
+    font-size: 24px;
 }
 
 .separator {
@@ -38,4 +39,18 @@ main {
 
 .color-red {
     color: red;
+}
+
+.input-task {
+    padding: 8px;
+    border-radius: 8px;
+}
+
+.clear-and-create-button {
+    height: 40px;
+    width: 120px;
+    border-radius: 12px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
 }

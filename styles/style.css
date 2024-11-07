@@ -5,6 +5,13 @@ header {
     align-items: center;
 }
 
+.main {
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    gap: 36px;
+}
+
 .join-icon {
     width: 55px;
     height: 80px;

@@ -9,13 +9,6 @@ body {
     background-color: #f6f7f8;
 }
 
-.main {
-    align-items: center;
-    height: 100vh;
-    flex-direction: column;
-    gap: 36px;
-}
-
 .bg-blue {
     background-color: #2a3647;
 }
@@ -35,4 +28,5 @@ body {
 .input-font {
     font-size: 20px;
     border-radius: 12px;
+    padding: 12px;
 }
