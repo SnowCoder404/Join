@@ -1,0 +1,11 @@
+.register-container {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.back-button {
+    width: 50px;
+    height: 50px;
+    border-radius: 24px;
+}

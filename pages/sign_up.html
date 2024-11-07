@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join</title>
+    <link rel="shortcut icon" href="../assets/icon/icon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/base.css">
+    <link rel="stylesheet" href="../styles/flexbox.css">
+    <link rel="stylesheet" href="../styles/pages/login.css">
+    <link rel="stylesheet" href="../styles/pages/sign_up.css">
+    <link rel="stylesheet" href="../styles/media_query.css">
+    <script src="../scripts/script.js"></script>
+</head>
+
+<body>
+    <header>
+        <div>
+            <img src="../assets/icon/icon.svg" class="join-icon" alt="Join">
+        </div>
+    </header>
+    <main class="d_flex_c">
+        <div class="formDiv">
+            <div class="text-center login-form w-100">
+                <div>
+                    <a href="../index.html">
+                        <button class="back-button"></button>
+                    </a>
+                </div> 
+                
+                <div class="d_flex_c" style="padding: 24px;">
+                    <div style="width: 150px;">
+                        <h1>Sign up</h1>
+                        <div class="separator"></div>
+                    </div>
+                </div>
+                <div class="register-container">
+                    <div class="d_flex">
+                        <input id="name" type="text" placeholder="Name" class="text-center w-100">
+                        <img src="" alt="">
+                    </div>
+                
+                    <div class="d_flex">
+                        <input id="email" type="email" placeholder="E-Mail" class="text-center w-100">
+                        <img src="" alt="">
+                   </div>
+                  
+                   <div class="d_flex"></div>
+                        <input id="password" type="password" placeholder="Password" class="text-center w-100">
+                        <img src="" alt="">
+                    </div>
+                    
+                    <div class="d_flex">
+                        <input id="passwordConfirm" type="password" placeholder="Confirm password" class="text-center w-100">
+                        <img src="" alt="">
+                    </div>
+            
+                    <div id="checkboxContainer" style="text-align: initial;">
+                        <input type="checkbox">
+                        <span>I accept the Privacy policy</span>
+                    </div>
+
+                    <div class="buttonDiv">
+                        <button onclick="registerNewUser()" class="button bg-blue color-white sign-up">Sign up</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="d_flex_c sign-in">
+            <a><span>Privacy Policy</span><a>
+            <a><span>Legal notice</span><a>
+        </div>
+    </footer>
+</body>
+</html>
