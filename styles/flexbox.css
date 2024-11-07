@@ -1,6 +1,10 @@
+.d_flex {
+  display: flex;
+}
+
 .d_flex_c {
     display: flex;
-    align-items: center;
+    justify-content: center;
 }
 
 .d_flex_c_c {
