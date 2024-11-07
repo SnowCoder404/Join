@@ -115,6 +115,10 @@ header {
 
     a {
       color: #cdcdcd;
+
+      &:hover {
+        color: #29abe2;
+      }
     }
   }
 }
