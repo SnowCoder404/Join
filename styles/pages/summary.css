@@ -1,0 +1,119 @@
+
+.content {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.page_title_div {
+    flex-direction: row;
+
+    height: 73px;
+    width: 625px;
+    gap: 30px;
+}
+
+.vertical_seperator_blue {
+    height: 59px;
+    width: 0;
+    border: 3px;
+    border-color: rgb(41, 171, 226);
+    border-style: solid;
+    border-radius: 50px;
+}
+
+.title {
+    height: 73px;
+    font-size: 61px;
+    font-weight: 700;
+}
+
+.title_second {
+    height: 32px;
+    font-weight: 400;
+    font-size: 27px;
+}
+
+.summary_content {
+    display: flex;
+    flex-direction: column;
+}
+
+.todo_and_done {
+    display: flex;
+    flex-direction: row;
+
+    width: 560px;
+    justify-content: space-between;
+}
+
+.todo-done_div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    background-color: white;
+
+    height: 168px;
+    width: 264px;
+    border-radius: 30px;
+    gap: 18px;
+}
+
+.todo-done_div img {
+    height: 69px;
+    width: 69px;
+}
+
+.number_and_name {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.urgent_todos_div {
+    width: 560px;
+    height: 168px;
+    border-radius: 30px;
+    gap: 61px;
+
+    background-color: white;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.urgent_todo {
+    display: flex;
+    flex-direction: row;
+    gap: 18px;
+}
+
+.urgent_todo img {
+    height: 69px;
+    width: 69px;
+}
+
+.datum_and_info {
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+}
+
+.margin_b_20px {
+    margin-bottom: 20px;
+}
+
+.vertical_seperator_gray {
+    height: 102px;
+    width: 0;
+    border: 2px;
+    border-color: rgb(209, 209, 209);
+    border-style: solid;
+    border-radius: 50px;
+}
