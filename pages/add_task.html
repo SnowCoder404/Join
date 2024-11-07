@@ -9,8 +9,9 @@
     <link rel="stylesheet" href="../styles/pages/board.css">
     <link rel="stylesheet" href="../styles/flexbox.css">
     <link rel="stylesheet" href="../styles/base.css">
+    <script src="../scripts/script.js"></script>
 </head>
-<body>
+<body onload="loadTask();">
     <header></header>
     <div class="d_flex" style="position: sticky; top: 0;">
         <div class="sidebar">
@@ -69,9 +70,9 @@
                 <div class="flex">
                     <span>Prio</span>
                     <div>
-                        <button class="prio-button">Urgent</button>
-                        <button class="prio-button">Medium</button>
-                        <button class="prio-button">Low</button>
+                        <button id="urgent"  class="prio-button" onclick="checkThePrioOfTask(1);">Urgent</button>
+                        <button id="medium" class="prio-button" onclick="checkThePrioOfTask(2);">Medium</button>
+                        <button id="low" class="prio-button" onclick="checkThePrioOfTask(3);">Low</button>
                     </div>
                 </div>
                 <div class="flex">
