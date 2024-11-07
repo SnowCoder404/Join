@@ -1,6 +1,14 @@
 function loadTask() {
     loadSidebar();
+    checkWhichSiteIsAktiv();
     mediumPrio();
+}
+
+function checkWhichSiteIsAktiv() {
+    document.getElementById("summary").classList.remove("active");
+    document.getElementById("task").classList.add("active");
+    document.getElementById("board").classList.remove("active");
+    document.getElementById("contact").classList.remove("active");
 }
 
 function checkThePrioOfTask(num) {
