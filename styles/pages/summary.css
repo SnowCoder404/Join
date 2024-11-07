@@ -14,7 +14,7 @@
     gap: 30px;
 }
 
-.vertical_seperator {
+.vertical_seperator_blue {
     height: 59px;
     width: 0;
     border: 3px;
@@ -35,7 +35,7 @@
     font-size: 27px;
 }
 
-.summary_cotent {
+.summary_content {
     display: flex;
     flex-direction: column;
 }
@@ -70,4 +70,50 @@
 .number_and_name {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.urgent_todos_div {
+    width: 560px;
+    height: 168px;
+    border-radius: 30px;
+    gap: 61px;
+
+    background-color: white;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.urgent_todo {
+    display: flex;
+    flex-direction: row;
+    gap: 18px;
+}
+
+.urgent_todo img {
+    height: 69px;
+    width: 69px;
+}
+
+.datum_and_info {
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+}
+
+.margin_b_20px {
+    margin-bottom: 20px;
+}
+
+.vertical_seperator_gray {
+    height: 102px;
+    width: 0;
+    border: 2px;
+    border-color: rgb(209, 209, 209);
+    border-style: solid;
+    border-radius: 50px;
 }
