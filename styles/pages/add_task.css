@@ -17,10 +17,6 @@ main {
     flex-direction: column;
 }
 
-.color-red {
-  color: red;
-}
-
 .input-task {
   padding: 8px;
   border-radius: 8px;
@@ -40,12 +36,4 @@ main {
   width: 100px;
   background-color: white;
   border-radius: 8px;
-}
-
-.no-active {
-    background-color: unset;
-}
-
-.no-active:hover {
-    background-color: rgba(255, 255,255 , 0.1);
 }
