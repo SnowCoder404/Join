@@ -10,43 +10,12 @@
     <link rel="stylesheet" href="../styles/flexbox.css" />
     <link rel="stylesheet" href="../styles/base.css" />
     <link rel="stylesheet" href="../styles/style.css" />
-    <script src="../scripts/script.js"></script>
-    <script src="../scripts/add_task.js"></script>
+    <script src="../scripts/template.js" defer></script>
+    <script src="../scripts/script.js" defer></script>
+    <script src="../scripts/add_task.js" defer></script>
   </head>
-  <body onload="loadTask();" class="d_flex">
-    <aside class="sidebar">
-      <img class="logo" src="../assets/img/logo-white.png" alt="logo" />
-      <div class="navigation">
-        <div class="active">
-          <span class="active">
-            <img src="../assets/icon/summary.png" alt="summary icon" />
-            <a href="#">Summary</a>
-          </span>
-        </div>
-        <div>
-          <span>
-            <img src="../assets/icon/addTask.png" alt="add task icon" />
-            <a href="#">Add Task</a>
-          </span>
-        </div>
-        <div>
-          <span>
-            <img src="../assets/icon/board.png" alt="board icon" />
-            <a href="#">Board</a>
-          </span>
-        </div>
-        <div>
-          <span>
-            <img src="../assets/icon/contacts.png" alt="contacts icon" />
-            <a href="#">Contacts</a>
-          </span>
-        </div>
-      </div>
-      <div class="privacy-container">
-        <a href="#">Privacy Policy</a>
-        <a href="#">Legal notice</a>
-      </div>
-    </aside>
+  <body onload="loadTask(); renderTemplates('add_task');" class="d_flex">
+    <aside class="sidebar"></aside>
 
     <main class="main" style="color: black">
       <header></header>
