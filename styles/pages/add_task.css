@@ -37,3 +37,11 @@
   background-color: white;
   border-radius: 8px;
 }
+
+.no-active {
+    background-color: unset;
+}
+
+.no-active:hover {
+    background-color: rgba(255, 255,255 , 0.1);
+}
