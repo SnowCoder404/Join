@@ -24,13 +24,12 @@
     <main class="d_flex_c">
         <div class="formDiv">
             <div class="text-center login-form w-100">
-                <div>
-                    <a href="../index.html">
-                        <button class="back-button"></button>
-                    </a>
-                </div> 
-                
-                <div class="d_flex_c" style="padding: 24px;">
+                <div class="d_flex" style="padding: 24px; justify-content: flex-start;">
+                    <div>
+                        <a href="../index.html">
+                            <button class="back-button"></button>
+                        </a>
+                    </div> 
                     <div style="width: 150px;">
                         <h1>Sign up</h1>
                         <div class="separator"></div>
@@ -38,27 +37,27 @@
                 </div>
                 <div class="register-container">
                     <div class="d_flex">
-                        <input id="name" type="text" placeholder="Name" class="text-center w-100">
+                        <input id="name" type="text" placeholder="Name" class="w-100 input-font" required>
                         <img src="" alt="">
                     </div>
                 
                     <div class="d_flex">
-                        <input id="email" type="email" placeholder="E-Mail" class="text-center w-100">
+                        <input id="email" type="email" placeholder="E-Mail" class="w-100 input-font" required>
                         <img src="" alt="">
                    </div>
                   
                    <div class="d_flex"></div>
-                        <input id="password" type="password" placeholder="Password" class="text-center w-100">
+                        <input id="password" type="password" placeholder="Password" class="w-100 input-font" required>
                         <img src="" alt="">
                     </div>
                     
                     <div class="d_flex">
-                        <input id="passwordConfirm" type="password" placeholder="Confirm password" class="text-center w-100">
+                        <input id="passwordConfirm" type="password" placeholder="Confirm password" class="w-100 input-font" required>
                         <img src="" alt="">
                     </div>
             
-                    <div id="checkboxContainer" style="text-align: initial;">
-                        <input type="checkbox">
+                    <div id="checkboxContainer">
+                        <input id="checkBox" type="checkbox" required>
                         <span>I accept the Privacy policy</span>
                     </div>
 
