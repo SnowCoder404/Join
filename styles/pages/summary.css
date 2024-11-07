@@ -147,7 +147,27 @@
 
     align-items: center;
     justify-content: center;
+}
 
+.greeting_div {
     height: 136px;
     width: 385px;
+    gap: 3px;
+    display: flex;
+    flex-direction: column;
+}
+
+#greeting {
+    height: 56px;
+    width: 338px;
+    font-size: 47px;
+    font-weight: 500;
+}
+
+#user_name {
+    height: 77px;
+    width: 385px;
+    font-size: 64px;
+    font-weight: 700;
+    color: #29ABE2;
 }
