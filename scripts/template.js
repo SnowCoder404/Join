@@ -38,7 +38,9 @@ function getHeaderHTML() {
   return `
         <h1>Kanban Project Management Tool</h1>
         <div class="profile">
+         <a href="./help.html">
           <img class="help-icon" src="../assets/icon/help.png" alt="help icon" />
+         </a>
           <span onclick="toggleHeaderMenu();">MS</span>
         </div>
 
