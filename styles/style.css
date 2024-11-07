@@ -52,15 +52,35 @@ header {
     width: 100px;
     white-space: nowrap;
 
+<<<<<<< HEAD
     img {
       width: 25px;
     }
 
+=======
+
+    span {
+        display: inline;
+        display: flex;
+        align-items: center;
+        column-gap: 1.2rem;
+        width: 100px;
+        white-space: nowrap;
+        font-size: 18px;
+        img {
+          width: 25px;
+        }
+    } 
+}    
+
+img {
+    width: 25px;
+>>>>>>> bcdfd3532d6ef59ad19ff0e81f30ad6a78bbb52a
     span {
       color: #fff;
       font-size: 15px;
     }
-  }
+}
 
   .navigation {
     display: flex;
