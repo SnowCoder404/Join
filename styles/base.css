@@ -14,6 +14,8 @@ body {
   width: calc(100% - 230px);
   height: 100vh;
   overflow: scroll;
+  display: flex;
+  flex-direction: column;
 
   header {
     width: 100%;
