@@ -1,4 +1,5 @@
 function loadTask() {
+    loadSidebar();
     mediumPrio();
 }
 

@@ -9,23 +9,14 @@
     <link rel="stylesheet" href="../styles/pages/board.css" />
     <link rel="stylesheet" href="../styles/flexbox.css" />
     <link rel="stylesheet" href="../styles/base.css" />
-    <link rel="stylesheet" href="../styles/style.css" />
+    <link rel="stylesheet" href="../styles/style.css"/>
+    <script src="../scripts/template.js"></script>
     <script src="../scripts/script.js"></script>
     <script src="../scripts/add_task.js"></script>
   </head>
   <body onload="loadTask();" class="d_flex">
         <div class="d_flex w-100" style="align-items: center;">
-            <aside class="sidebar">
-                <img class="logo" src="../assets/img/logo-white.png" alt="logo" />
-                <div class="navigation">
-                    <div class="active">
-                        <span class="active">
-                            <img src="../assets/icon/summary.png" alt="summary icon" />
-                            <a href="#">Summary</a>
-                        </span>
-                    </div>
-                </div>
-            </aside>
+            <aside id="sidebar" class="sidebar"></aside>
             <main class="d_flex_c w-100 main" style="color: black;">
                 <form class="d_flex">
                     <div>
@@ -77,7 +68,6 @@
                     </div>
                 </form>
             </main>
-
         </div>
 </body>
 </html>
