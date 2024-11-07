@@ -72,6 +72,7 @@ header {
       height: 50px;
       margin-top: 0.8rem;
       transition: all 0.2s;
+      cursor: pointer;
 
       &:hover {
         background-color: #091931;
