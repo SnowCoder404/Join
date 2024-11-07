@@ -7,16 +7,10 @@
 }
 
 .separator {
-<<<<<<< HEAD
-  height: 330px;
-  width: 3px;
-  background-color: black;
-=======
     height: 330px;
     width: 3px;
     margin: 60px;
     background-color: black;
->>>>>>> eee09ec (The add task page is in work by snowcoder404 please do not change this file. Add the prio system with diferent color and add the add_task.js in the scripts folder)
 }
 
 .color-red {
