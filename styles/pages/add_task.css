@@ -1,63 +1,38 @@
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-}
-
-body {
-    background-color: #f6f7f8;
-}
-
-header {
-    height: 120px;
-    width: 90vw;
-    position: absolute;
-    right: 0;
-    background-color: white;
-}
-
-main {
-    padding: 350px 100px;
-    display: flex;
-    gap: 42px;
-}
-
 .flex {
-    display: flex;
-    flex-direction: column;
-    gap: 3px;
-    margin-bottom: 12px;
-    font-size: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  margin-bottom: 12px;
+  font-size: 24px;
 }
 
 .separator {
-    height: 330px;
-    width: 3px;
-    background-color: black;
+  height: 330px;
+  width: 3px;
+  background-color: black;
 }
 
 .color-red {
-    color: red;
+  color: red;
 }
 
 .input-task {
-    padding: 8px;
-    border-radius: 8px;
+  padding: 8px;
+  border-radius: 8px;
 }
 
 .clear-and-create-button {
-    height: 40px;
-    width: 120px;
-    border-radius: 12px;
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
+  height: 40px;
+  width: 120px;
+  border-radius: 12px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
 }
 
 .prio-button {
-    height: 40px;
-    width: 100px;
-    background-color: white;
-    border-radius: 8px;
+  height: 40px;
+  width: 100px;
+  background-color: white;
+  border-radius: 8px;
 }
