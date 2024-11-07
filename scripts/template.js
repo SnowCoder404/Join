@@ -33,3 +33,19 @@ function getSidebarHTML(pageName) {
       </div>
   `;
 }
+
+function getHeaderHTML() {
+  return `
+        <h1>Kanban Project Management Tool</h1>
+        <div class="profile">
+          <img class="help-icon" src="../assets/icon/help.png" alt="help icon" />
+          <span>MS</span>
+        </div>
+
+        <div class="header-menu">
+          <a href="./legal_notice.html">Legal Notice</a>
+          <a href="./privacy_policy.html">Privacy Policy</a>
+          <a href="#">Logout</a>
+        </div>
+  `;
+}

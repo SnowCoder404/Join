@@ -1,76 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Join</title>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Join</title>
+    <link rel="stylesheet" href="../styles/pages/summary.css" />
+    <link rel="stylesheet" href="../styles/flexbox.css" />
+    <link rel="stylesheet" href="../styles/base.css" />
+    <link rel="stylesheet" href="../styles/style.css" />
 
+    <script src="../scripts/template.js" defer></script>
+    <script src="../scripts/script.js" defer></script>
+  </head>
 
-  <link rel="stylesheet" href="../styles/pages/summary.css">
-  <link rel="stylesheet" href="../styles/flexbox.css">
-  <link rel="stylesheet" href="../styles/base.css">
-  <link rel="stylesheet" href="../styles/style.css">
+  <body onload="renderTemplates('summary');">
+    <aside class="sidebar"></aside>
 
-  <script src="../scripts/template.js" defer></script>
-  <script src="../scripts/script.js" defer></script>
+    <main class="app-main">
+      <header class="header">
+        <h1>Kanban Project Management Tool</h1>
+        <div class="profile">
+          <img class="help-icon" src="../assets/icon/help.png" alt="help icon" />
+          <span>MS</span>
+        </div>
+      </header>
 
-</head>
+      <div class="container">
+        <div id="title_div" class="d_flex_align_c page_title_div">
+          <h1 class="title d_flex_align_c">Join 360</h1>
+          <div class="vertical_seperator_blue"></div>
+          <span class="title_second color-blue">Key metrics at Glance</span>
+        </div>
 
-<body onload="renderTemplates('summary');">
-  <aside class="sidebar"></aside>
+        <div class="summary_content">
+          <div class="todo_and_done margin_b_20px">
+            <div class="todo-done_div">
+              <img src="../assets/icon/summary_todo.png" alt="" />
+              <div class="number_and_name">
+                <span>anzahl</span>
+                <span>to-do</span>
+              </div>
+            </div>
 
-  <main class="app-main">
-    <header>hier kommt der header</header>
-
-    <div class="container">
-      <div id="title_div" class="d_flex_align_c page_title_div">
-        <h1 class="title d_flex_align_c">Join 360</h1>
-        <div class="vertical_seperator_blue"></div>
-        <span class="title_second color-blue">Key metrics at Glance</span>
-      </div>
-
-      <div class="summary_content">
-
-        <div class="todo_and_done margin_b_20px">
-
-          <div class="todo-done_div">
-            <img src="../assets/icon/summary_todo.png" alt="">
-            <div class="number_and_name">
-              <span>anzahl</span>
-              <span>to-do</span>
+            <div class="todo-done_div">
+              <img src="../assets/icon/summary_done.png" alt="" />
+              <div class="number_and_name">
+                <span>anzahl</span>
+                <span>done</span>
+              </div>
             </div>
           </div>
 
-          <div class="todo-done_div">
-            <img src="../assets/icon/summary_done.png" alt="">
-            <div class="number_and_name">
-              <span>anzahl</span>
-              <span>done</span>
+          <div class="urgent_todos_div margin_b_20px">
+            <div class="urgent_todo">
+              <img src="../assets/icon/urgent_todo.png" alt="" />
+              <div class="number_and_name">
+                <span>anzahl</span>
+                <span>urgent</span>
+              </div>
+            </div>
+            <div class="vertical_seperator_gray"></div>
+            <div class="datum_and_info">
+              <div class="upcomming_deadline">datum bsp</div>
+              <span class="upcomming_deadline">Upcoming Deadline</span>
             </div>
           </div>
         </div>
-
-        <div class="urgent_todos_div margin_b_20px">
-          <div class="urgent_todo">
-            <img src="../assets/icon/urgent_todo.png" alt="">
-            <div class="number_and_name">
-              <span>anzahl</span>
-              <span>urgent</span>
-            </div>
-          </div>
-          <div class="vertical_seperator_gray"></div>
-          <div class="datum_and_info">
-            <div class="upcomming_deadline">datum bsp</div>
-            <span class="upcomming_deadline">Upcoming Deadline</span>
-          </div>
-
-        </div>
       </div>
-    </div>
-
-  </main>
-
-</body>
-
+    </main>
+  </body>
 </html>
