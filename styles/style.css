@@ -71,6 +71,11 @@ header {
       width: 100%;
       height: 50px;
       margin-top: 0.8rem;
+      transition: all 0.2s;
+
+      &:hover {
+        background-color: #091931;
+      }
     }
 
     .active {
