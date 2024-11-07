@@ -33,18 +33,27 @@ function checkThePrioOfTask(num) {
 }
 
 function urgentPrio() {
+    document.getElementById("urgent").classList.add("active-prio");
+    document.getElementById("medium").classList.remove("active-prio");
+    document.getElementById("low").classList.remove("active-prio");
     changeTheColor("urgent", "red");
     changeTheColor("medium", "white");
     changeTheColor("low", "white");
 }
 
 function mediumPrio() {
+    document.getElementById("urgent").classList.remove("active-prio");
+    document.getElementById("medium").classList.add("active-prio");
+    document.getElementById("low").classList.remove("active-prio");
     changeTheColor("urgent", "white");
     changeTheColor("medium", "orange");
     changeTheColor("low", "white");
 }
 
 function lowPrio() {
+    document.getElementById("urgent").classList.remove("active-prio");
+    document.getElementById("medium").classList.remove("active-prio");
+    document.getElementById("low").classList.add("active-prio");
     changeTheColor("urgent", "white");
     changeTheColor("medium", "white");
     changeTheColor("low", "green");
@@ -69,5 +78,19 @@ function changeTheColor(item, color) {
 function clear() {
     document.getElementById("title").value = "";
     document.getElementById("description").value = "";
+    document.getElementById("date").value = "";
     mediumPrio()
+}
+
+function createNewTask() {
+    let title = document.getElementById("title").value;
+    let date = document.getElementById("date").value;
+    let prio = document.getElementsByClassName("active-prio")[0].id;
+    let taskObj = {
+            "title": title,
+            "date": date,
+            "prio": prio
+    }
+    console.log(taskObj);
+    clear();
 }
