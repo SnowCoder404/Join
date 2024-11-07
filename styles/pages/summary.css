@@ -140,3 +140,14 @@
     padding-bottom: 25px;
     gap: 13px;
 }
+
+.summary_and_greeting_div {
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+    justify-content: center;
+
+    height: 136px;
+    width: 385px;
+}
