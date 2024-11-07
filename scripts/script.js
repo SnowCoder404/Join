@@ -8,3 +8,8 @@ function renderTemplates(pageName) {
   headerElement.innerHTML = header;
   sidebarElement.innerHTML = sidebar;
 }
+
+function toggleHeaderMenu() {
+  const menu = document.querySelector('.header-menu');
+  menu.classList.toggle('show-element');
+}
