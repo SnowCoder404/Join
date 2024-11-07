@@ -9,69 +9,84 @@
     <link rel="stylesheet" href="../styles/pages/board.css" />
     <link rel="stylesheet" href="../styles/flexbox.css" />
     <link rel="stylesheet" href="../styles/base.css" />
-    <link rel="stylesheet" href="../styles/style.css"/>
+    <link rel="stylesheet" href="../styles/style.css" />
     <script src="../scripts/template.js"></script>
     <script src="../scripts/script.js"></script>
     <script src="../scripts/add_task.js"></script>
   </head>
   <body onload="loadTask();" class="d_flex">
-        <div class="d_flex_c_c w-100">
-            <aside id="sidebar" class="sidebar"></aside>
-            <main class="d_flex_c w-100 main">
-                <form class="d_flex" style="flex-direction: column;">
-                    <div class="d_flex_c">
-                        <div>
-                            <h1 style="margin-bottom: 12px;">Add Task</h1>
-                            <div>
-                                <div class="flex">
-                                    <span>Title<span class="color-red">*</span></span>
-                                    <input id="title" type="text" placeholder="Enter a title" class="input-task" required>
-                                </div>
-                                <div class="flex">
-                                    <span>Description</span>
-                                    <input id="description" type="text" placeholder="Enter a Description" class="input-task">
-                                </div>
-                                <div class="flex">
-                                    <span>Assigned to</span>
-                                    <input type="text">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="separator"></div>
-                        <div style="margin: 46px 10px;">
-                            <div class="flex">
-                                <span>Due date<span class="color-red">*</span></span>
-                                <input id="date" type="date" class="input-task" required>
-                            </div>
-                            <div class="flex">
-                                <span>Prio</span>
-                                <div class="d_flex">
-                                    <button id="urgent"  class="prio-button" onclick="checkThePrioOfTask(1);">Urgent</button>
-                                    <button id="medium" class="prio-button" onclick="checkThePrioOfTask(2);">Medium</button>
-                                    <button id="low" class="prio-button" onclick="checkThePrioOfTask(3);">Low</button>
-                                </div>
-                            </div>
-                            <div class="flex">
-                                <span>Category</span>
-                                <input type="text">
-                            </div>
-                            <div class="flex">
-                                <span>Subtasks</span>
-                                <input type="text">
-                            </div>
-                        </div>
-                    </div>
-                </form>
-                <div class="d_flex buttonTaskDiv">
-                    <span>
-                        <span class="color-red">*</span>This field is required
-                    </span>
-                    <div>
-                        <button onclick="clear();" class="bg-blue clear-and-create-button">Clear</button>
-                        <button onclick="createNewTask();" class="bg-blue clear-and-create-button">Create Task</button>
-                    </div>
+    <div class="d_flex_c_c w-100">
+      <aside id="sidebar" class="sidebar"></aside>
+      <main class="d_flex_c w-100 main">
+        <form class="d_flex" style="flex-direction: column">
+          <div class="d_flex_c">
+            <div>
+              <h1 style="margin-bottom: 12px">Add Task</h1>
+              <div>
+                <div class="flex">
+                  <span>Title<span class="color-red">*</span></span>
+                  <input
+                    id="title"
+                    type="text"
+                    placeholder="Enter a title"
+                    class="input-task"
+                    required
+                  />
                 </div>
-            </main>
+                <div class="flex">
+                  <span>Description</span>
+                  <input
+                    id="description"
+                    type="text"
+                    placeholder="Enter a Description"
+                    class="input-task"
+                  />
+                </div>
+                <div class="flex">
+                  <span>Assigned to</span>
+                  <input type="text" />
+                </div>
+              </div>
+            </div>
+            <div class="separator"></div>
+            <div style="margin: 46px 10px">
+              <div class="flex">
+                <span>Due date<span class="color-red">*</span></span>
+                <input id="date" type="date" class="input-task" required />
+              </div>
+              <div class="flex">
+                <span>Prio</span>
+                <div class="d_flex">
+                  <button id="urgent" class="prio-button" onclick="checkThePrioOfTask(1);">
+                    Urgent
+                  </button>
+                  <button id="medium" class="prio-button" onclick="checkThePrioOfTask(2);">
+                    Medium
+                  </button>
+                  <button id="low" class="prio-button" onclick="checkThePrioOfTask(3);">Low</button>
+                </div>
+              </div>
+              <div class="flex">
+                <span>Category</span>
+                <input type="text" />
+              </div>
+              <div class="flex">
+                <span>Subtasks</span>
+                <input type="text" />
+              </div>
+            </div>
+          </div>
+        </form>
+        <div class="d_flex buttonTaskDiv">
+          <span> <span class="color-red">*</span>This field is required </span>
+          <div>
+            <button onclick="clear();" class="bg-blue clear-and-create-button">Clear</button>
+            <button onclick="createNewTask();" class="bg-blue clear-and-create-button">
+              Create Task
+            </button>
+          </div>
         </div>
-</body>
+      </main>
+    </div>
+  </body>
 </html>

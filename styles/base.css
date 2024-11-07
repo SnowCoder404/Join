@@ -87,7 +87,6 @@ body {
 
   .container {
     margin: 100px 90px;
-    background-color: yellowgreen;
   }
 }
 
@@ -112,7 +111,7 @@ body {
 }
 
 .color-red {
-    color: red;
+  color: red;
 }
 
 .text-center {
@@ -124,7 +123,7 @@ body {
 }
 
 .g_12 {
-    gap: 12px;
+  gap: 12px;
 }
 
 .input-font {
