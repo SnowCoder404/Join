@@ -117,3 +117,26 @@
     border-style: solid;
     border-radius: 50px;
 }
+
+.all_task_div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 170px;
+    width: 560px;
+}
+
+.task_div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: white;
+
+    height: 168px;
+    width: 168px;
+    border-radius: 30px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    gap: 13px;
+}
