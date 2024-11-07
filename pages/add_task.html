@@ -15,26 +15,26 @@
         <div class="sidebar">
             <div></div>
             <div>
-                <div class="sidebar-menu">
-                    <a href="../pages/summary.html">
+                <a href="../pages/summary.html">
+                    <div class="sidebar-menu">
                         <span>Summary</span>
-                    </a>
-                </div>
-                <div class="sidebar-menu">
-                    <a href="../pages/add_task.html">
+                    </div>
+                </a>
+                <a href="../pages/add_task.html">
+                    <div class="sidebar-menu">
                         <span>Add Task</span>
-                    </a>
-                </div>
-                <div class="sidebar-menu">
-                    <a href="../pages/board.html">
+                    </div>
+                </a>
+                <a href="../pages/board.html">
+                    <div class="sidebar-menu">
                         <span>Board</span>
-                    </a>
-                </div>
-                <div class="sidebar-menu">
-                    <a href="../pages/contacts.html">
+                    </div>
+                </a>   
+                <a href="../pages/contacts.html">
+                    <div class="sidebar-menu">
                         <span>Contacts</span>
-                    </a>
-                </div>
+                    </div>
+                </a>
             </div>
             <div></div>
         </div>
@@ -43,7 +43,7 @@
                 <h1 style="margin-bottom: 12px;">Add Task</h1>
                 <div>
                     <div class="flex">
-                        <span>Title *</span>
+                        <span>Title <span class="color-red">*</span></span>
                         <input type="text" placeholder="Enter a title">
                     </div>
                     <div class="flex">
@@ -55,6 +55,9 @@
                         
                     </div>
                 </div>
+                <span>
+                    <span class="color-red">*</span> This field is required
+                </span>
             </div>
             <div class="separator"></div>
             <div>
@@ -63,6 +66,10 @@
                 <div></div>
                 <div></div>
                 <div></div>
+                <div>
+                    <button>Clear</button>
+                    <button>Create Task</button>
+                </div>
             </div>
         </main>
     </div>

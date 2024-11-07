@@ -35,3 +35,7 @@ main {
     width: 3px;
     background-color: black;
 }
+
+.color-red {
+    color: red;
+}
