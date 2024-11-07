@@ -9,8 +9,6 @@ body {
     background-color: #f6f7f8;
 }
 
-
-
 .bg-blue {
     background-color: #2a3647;
 }
@@ -25,6 +23,10 @@ body {
 
 .w-100 {
     width: 100%;
+}
+
+.g_12 {
+    gap: 12px;
 }
 
 .input-font {
