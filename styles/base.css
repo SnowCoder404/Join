@@ -111,12 +111,20 @@ body {
   background-color: rgb(41, 171, 226);
 }
 
+.color-red {
+    color: red;
+}
+
 .text-center {
   text-align: center;
 }
 
 .w-100 {
   width: 100%;
+}
+
+.g_12 {
+    gap: 12px;
 }
 
 .input-font {
