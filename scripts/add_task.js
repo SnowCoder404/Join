@@ -1,14 +1,5 @@
 function loadTask() {
-  loadSidebar();
-  showWhichSiteIsAktiv();
   mediumPrio();
-}
-
-function showWhichSiteIsAktiv() {
-  addClassToElement('summary', 'no-active');
-  addClassToElement('task', 'active');
-  addClassToElement('board', 'no-active');
-  addClassToElement('contacts', 'no-active');
 }
 
 /**
