@@ -51,3 +51,7 @@ function getHeaderHTML() {
         </div>
   `;
 }
+
+function getUserListTemplate(value, option) {
+  return `<option value="${value}">${option}</option>`;
+}

@@ -3,80 +3,116 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Join</title>
-    <link rel="shortcut icon" href="./assets/icon/icon.svg" type="image/x-icon" />
+    <title>Add Task</title>
+    <link rel="shortcut icon" href="../assets/img/logo-white.png" type="image/x-icon" />
     <link rel="stylesheet" href="../styles/pages/add_task.css" />
     <link rel="stylesheet" href="../styles/pages/board.css" />
     <link rel="stylesheet" href="../styles/flexbox.css" />
     <link rel="stylesheet" href="../styles/base.css" />
     <link rel="stylesheet" href="../styles/style.css" />
     <link rel="stylesheet" href="../styles/media_query.css" />
+    
     <script src="../scripts/template.js" defer></script>
+    <script src="../scripts/priority.js" defer></script>
     <script src="../scripts/script.js" defer></script>
     <script src="../scripts/add_task.js" defer></script>
   </head>
-  <body onload="loadTask(); renderTemplates('add_task');" class="d_flex">
-    <aside class="sidebar"></aside>
+
+  <body onload="loadTask();" class="d_flex">
+    <aside id="sidebar" class="sidebar"></aside>
 
     <main class="app-main" style="color: black">
       <header class="header">
-        <h1>Kanban Project Management Tool</h1>
-        <div class="profile">
-          <img class="help-icon" src="../assets/icon/help.png" alt="help icon" />
-          <span>MS</span>
-        </div>
       </header>
 
       <div class="container">
-        <div>
-          <!-- Here comes your content -->
-          <h1 style="margin-bottom: 12px">Add Task</h1>
-          <div>
-            <div class="flex">
-              <span>Title<span class="color-red">*</span></span>
-              <input type="text" placeholder="Enter a title" class="input-task" required />
+        <div class="d_flex_column">
+            <div class="d_flex_c main-div">
+                <div class="media-w-300">
+                    <h1 style="margin-bottom: 12px;">Add Task</h1>
+                    <div>
+                        <div class="flex">
+                            <span>Title<span class="color-red">*</span></span>
+                            <input id="title" type="text" placeholder="Enter a title" class="input-task input-field must-input" required>
+                            <span id="titleFailNote" class="d_none fail-note">Fail not all fields write</span>
+                        </div>
+                        <div class="flex">
+                            <span>Description</span>
+                            <textarea id="description" rows="5" cols="50" placeholder="Enter a Description"></textarea>
+                        </div>
+                        <div class="flex">
+                            <span>Assigned to</span>
+                            <select id="userlist" class="h-34 input-field">
+                                <option>Select contacts to assign</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="separator separator-max"></div>
+                <div class="media-w-300" style="margin: 46px 10px;">
+                    <div class="flex">
+                        <span>Due date<span class="color-red">*</span></span>
+                        <input id="date" type="date" class="input-task must-input" required>
+                        <span id="dateFailNote" class="d_none fail-note">Fail not all fields write</span>
+                    </div>
+                    <div class="flex">
+                        <span>Prio</span>
+                        <div class="d_flex">
+                            <button id="urgent"  class="d_flex_c prio-button" onclick="checkThePrioOfTask(1);">Urgent
+                                <div class="d_flex_column">
+                                    <img id="urgent0" src="../assets/img/urgent.svg" alt="urgent" class="prio-button-image">
+                                    <img id="urgent1" src="../assets/img/urgent.svg" alt="urgent" class="prio-button-image">
+                                </div>
+                            </button>
+
+                            <button id="medium" class="d_flex_c prio-button" onclick="checkThePrioOfTask(2);">Medium
+                                <div class="d_flex_column">
+                                    <img id="medium0" src="../assets/img/medium-white.svg" alt="medium" class="prio-button-image">
+                                    <img id="medium1" src="../assets/img/medium-white.svg" alt="medium" class="prio-button-image">
+                                </div>
+                            </button>
+
+                            <button id="low" class="d_flex_c prio-button" onclick="checkThePrioOfTask(3);">Low
+                                <div class="d_flex_column">
+                                    <img id="low0" src="../assets/img/low.svg" alt="low" class="prio-button-image">
+                                    <img id="low1" src="../assets/img/low.svg" alt="low" class="prio-button-image">
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="flex">
+                        <span>Category<span class="color-red">*</span></span>
+                        <select id="category" class="h-34 input-field must-input">
+                            <option>Select task category</option>
+                        </select>
+                        <span id="categoryFailNote" class="d_none fail-note">Fail not all fields write</span>
+                    </div>
+                    <div class="flex">
+                        <span>Subtasks</span>
+                        <div class="d_flex">
+                            <input type="text" placeholder="Add new subtask" class="w-100 h-34 input-field">
+                            <img src="../assets/img/plus.svg" style="margin: -24px;">
+                        </div>
+                        <span id="required-field">
+                            <span class="color-red">*</span>This field is required
+                        </span>
+                      
+                    </div>
+                </div>
             </div>
-            <div class="flex">
-              <span>Description</span>
-              <input type="text" placeholder="Enter a Description" class="input-task" />
-            </div>
-            <div class="flex">
-              <span>Assigned to</span>
-              <input type="text" />
-            </div>
-          </div>
-          <span><span class="color-red">*</span> This field is required</span>
         </div>
-        <div class="separator"></div>
-        <div>
-          <div class="flex">
-            <span>Due date<span class="color-red">*</span></span>
-            <input type="date" class="input-task" required />
-          </div>
-          <div class="flex">
-            <span>Prio</span>
-            <div>
-              <button id="urgent" class="prio-button" onclick="checkThePrioOfTask(1);">
-                Urgent
-              </button>
-              <button id="medium" class="prio-button" onclick="checkThePrioOfTask(2);">
-                Medium
-              </button>
-              <button id="low" class="prio-button" onclick="checkThePrioOfTask(3);">Low</button>
+        <div class="d_flex_c">
+            <div class="d_flex buttonTaskDiv">
+                <span id="required-field-big">
+                    <span class="color-red">*</span>This field is required
+                </span>
+                <div class="d_flex g_12">
+                    <button onclick="clear()" class="clear-and-create-button" style="color: black;">Clear X</button>
+                    <button onclick="createNewTask();" class="bg-blue clear-and-create-button">Create Task
+                        <img src="../assets/img/check.svg" alt="check">
+                    </button>
+                </div>
             </div>
-          </div>
-          <div class="flex">
-            <span>Category</span>
-            <input type="text" />
-          </div>
-          <div class="flex">
-            <span>Subtasks</span>
-            <input type="text" />
-          </div>
-          <div>
-            <button onclick="clear()" class="bg-blue clear-and-create-button">Clear</button>
-            <button class="bg-blue clear-and-create-button">Create Task</button>
-          </div>
         </div>
       </div>
     </main>

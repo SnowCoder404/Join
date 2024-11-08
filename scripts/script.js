@@ -28,10 +28,7 @@ function addClassToElement(element, aktiveClass) {
 
 function loadHeader() {
   document.querySelector('.header').innerHTML = getHeaderHTML();
-
-
 }
-
 
 function toggleHeaderMenu() {
   const menu = document.querySelector('.header-menu');

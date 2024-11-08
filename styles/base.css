@@ -138,6 +138,10 @@ button {
   width: 100%;
 }
 
+.h-34 {
+  height: 34px;
+}
+
 .g_12 {
   gap: 12px;
 }

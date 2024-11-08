@@ -21,6 +21,7 @@
 }
 
 /** SIDEBAR QUERIES ** */
+
 @media (max-width: 1250px) {
   .app-main {
     width: calc(100% - 200px);
@@ -237,4 +238,62 @@
         width: 40px;
         height: 73px;
     }
+}
+
+/** Task QUERIES ** */
+
+@media (max-width: 1150px) {
+  .separator-max {
+      display: none !important;
+  }
+  .main-div{
+      flex-direction: column;
+      align-items: center;
+  }
+  .media-w-300 {
+      width: 300px;
+  }
+  .buttonTaskDiv {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  #required-field-big {
+      display: none !important;
+  }
+}
+
+@media (min-width: 1150px) {
+  #required-field {
+      display: none !important;
+  }
+}
+
+@media (max-width: 600px) {
+  #sidebar {
+      display: none !important;
+  }
+  .add-task-main {
+      align-items: center;
+      height: 100vh;
+  }
+  .hidden {
+      display: none !important;
+  }
+  .buttonDiv {
+      flex-direction: column;
+      align-items: center;
+  }
+  .formDiv {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+  }
+}
+
+@media (min-width: 600px) {
+  .hiddenMin {
+      display: none !important;
+  }
 }
