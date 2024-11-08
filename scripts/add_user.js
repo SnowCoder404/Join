@@ -1,7 +1,9 @@
 const BACKEND_URL = "https://jointest-6cc29-default-rtdb.europe-west1.firebasedatabase.app/";
 
 /**
+ * 
  * Define the data from user and check is the checkbox checked ?
+ *
  */
 
 function registerNewUser() {

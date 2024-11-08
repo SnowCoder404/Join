@@ -1,22 +1,224 @@
-.sidebar {
-    background-color: #2a3647;
+.board-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  & > div {
     display: flex;
-    justify-content: space-around;
-    flex-direction: column;
-    height: 100vh;
-    width: 300px;
+    align-items: center;
+    column-gap: 50px;
+  }
+
+  h1 {
+    font-size: 60px;
+  }
 }
 
-.sidebar-menu {
+.board-searchBar {
+  display: flex;
+  align-items: center;
+  width: 312px;
+  height: 48px;
+  border-radius: 10px;
+  background-color: #fff;
+  border: 1px solid #a8a8a8;
+  position: relative;
+  overflow: hidden;
+
+  span {
     display: flex;
-    justify-content: center;
-    color: white;
-    font-weight: bold;
+    align-items: center;
+    padding: 0 15px;
+    border-left: 1px solid #a8a8a8;
+
+    img {
+      width: 20px;
+    }
+  }
+
+  input {
+    width: 100%;
+    height: 100%;
+    outline: none;
+    border: none;
     font-size: 20px;
-    padding: 12px;
+    padding: 15px;
+
+    &::placeholder {
+      color: #d1d1d1;
+    }
+
+    &:focus {
+      background-color: rgb(251, 250, 250);
+    }
+  }
 }
 
-.sidebar-menu:hover {
+.board-add-task-button {
+  background-color: #2a3647;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  column-gap: 12px;
+  font-size: 21px;
+  padding: 12px;
+  border-radius: 10px;
+  cursor: pointer;
+  border: none;
+  transition: all 0.2s;
+
+  &:hover {
+    background-color: #29abe2;
+    box-shadow: 0px 4px 4px 0px #0000001a;
+    transform: scale(1.01);
+  }
+
+  &:active {
+    transform: scale(0.98);
+  }
+
+  img {
+    width: 18px;
+  }
+}
+
+.board-content {
+  display: flex;
+  justify-content: space-between;
+  gap: 32px;
+  flex-wrap: wrap;
+  margin-top: 50px;
+
+  & > div {
+    width: 290px;
+    min-height: 500px;
     cursor: pointer;
-    background-color: rgba(0, 0, 0, 0.3);
+
+    & > span {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      h2 {
+        font-size: 20px;
+        color: #42526e;
+      }
+
+      img {
+        transition: all 0.2s;
+        cursor: pointer;
+
+        &:hover {
+          scale: 1.08;
+        }
+      }
+    }
+
+    ul {
+      margin-top: 18px;
+      list-style: none;
+
+      li {
+        margin-top: 24px;
+        width: 100%;
+        border-radius: 10px;
+        background-color: #fff;
+        border-radius: 24px;
+        padding: 16px;
+        box-shadow: 0px 0px 10px 3px #00000014;
+        display: flex;
+        flex-direction: column;
+        row-gap: 24px;
+
+        .task-category {
+          border-radius: 10px;
+          padding: 4px 15px;
+          text-align: center;
+          font-size: 16px;
+          color: #fff;
+          max-width: fit-content;
+        }
+
+        .task-title {
+          color: #2a3647;
+          font-size: 16px;
+        }
+
+        .task-description {
+          font-weight: 400;
+          color: #a8a8a8;
+        }
+
+        .progressbar {
+          display: flex;
+          align-items: center;
+          column-gap: 8px;
+
+          .subtasks-text {
+            font-weight: 500;
+            white-space: nowrap;
+          }
+
+          progress {
+            appearance: none;
+            height: 8px;
+
+            &::-webkit-progress-bar {
+              background-color: #f4f4f4;
+              border-radius: 8px;
+            }
+
+            &::-webkit-progress-value {
+              background-color: #4589ff;
+              border-radius: 8px;
+            }
+          }
+        }
+
+        .task-assigned-container {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+
+          .assigned-users {
+            display: flex;
+            align-items: center;
+
+            span {
+              font-size: 12px;
+              border: 1px solid #fff;
+              width: 32px;
+              height: 32px;
+              border-radius: 50%;
+              color: #fff;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+
+              &:not(:first-child) {
+                margin-left: -8px;
+              }
+            }
+          }
+
+          img {
+            width: 17px;
+            transform: translateX(-6px);
+          }
+        }
+      }
+
+      .empty-message {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #e7e7e7;
+        height: 48px;
+        border: 1px dashed #a8a8a8;
+        color: #a8a8a8;
+        box-shadow: none;
+        border-radius: 10px;
+      }
+    }
+  }
 }

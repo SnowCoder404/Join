@@ -1,32 +1,7 @@
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-}
-
-body {
-    background-color: #f6f7f8;
-}
-
-header {
-    height: 120px;
-    width: 90vw;
-    position: absolute;
-    right: 0;
-    background-color: white;
-}
-
-main {
-    padding: 350px 100px;
-    display: flex;
-    gap: 42px;
-}
-
 .flex {
     display: flex;
     flex-direction: column;
-    gap: 3px;
+    gap: 18px;
     margin-bottom: 12px;
     font-size: 24px;
 }
@@ -34,11 +9,13 @@ main {
 .separator {
     height: 330px;
     width: 3px;
+    margin: 60px;
     background-color: black;
 }
 
-.color-red {
-    color: red;
+main {
+    flex-direction: column;
+    color: black;
 }
 
 .input-task {
@@ -47,8 +24,11 @@ main {
 }
 
 .clear-and-create-button {
-    height: 40px;
-    width: 120px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 50px;
+    width: 160px;
     border-radius: 12px;
     color: white;
     font-weight: bold;
@@ -60,4 +40,41 @@ main {
     width: 100px;
     background-color: white;
     border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.prio-button-image {
+    width: 18px;
+}
+
+.buttonTaskDiv {
+    width: 800px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.checkbox-menu {
+    background-color: white;
+    width: 200px;
+    height: 135px;
+}
+
+.input-button {
+    height: 20px;
+    width: 20px;
+}
+
+.fail-note {
+    color: darkred;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.input-field {
+    background-color: white;
+    border-block: 0;
+    border-inline: 0;
 }

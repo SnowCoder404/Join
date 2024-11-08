@@ -1,13 +1,41 @@
+.container_flex{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.padding_l_100px{
+    padding-left: 100px;
+}
+
+.content {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
 
 .page_title_div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     flex-direction: row;
 
     height: 73px;
     width: 625px;
     gap: 30px;
+    margin-bottom: 64px;
 }
 
-.vertical_seperator {
+.seperator_and_title_second {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.vertical_seperator_blue {
     height: 59px;
     width: 0;
     border: 3px;
@@ -26,4 +54,146 @@
     height: 32px;
     font-weight: 400;
     font-size: 27px;
+}
+
+.summary_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.todo_and_done {
+    display: flex;
+    flex-direction: row;
+
+    width: 560px;
+    justify-content: space-between;
+}
+
+.todo-done_div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    background-color: white;
+
+    height: 168px;
+    width: 264px;
+    border-radius: 30px;
+    gap: 18px;
+}
+
+.todo-done_div img {
+    height: 69px;
+    width: 69px;
+}
+
+.number_and_name {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.urgent_todos_div {
+    width: 560px;
+    height: 168px;
+    border-radius: 30px;
+    gap: 61px;
+
+    background-color: white;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.urgent_todo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 18px;
+}
+
+.urgent_todo img {
+    height: 69px;
+    width: 69px;
+}
+
+.datum_and_info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 13px;
+}
+
+.margin_b_20px {
+    margin-bottom: 20px;
+}
+
+.vertical_seperator_gray {
+    height: 102px;
+    width: 0;
+    border: 2px;
+    border-color: rgb(209, 209, 209);
+    border-style: solid;
+    border-radius: 50px;
+}
+
+.all_task_div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 170px;
+    width: 560px;
+}
+
+.task_div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: white;
+
+    height: 168px;
+    width: 168px;
+    border-radius: 30px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    gap: 13px;
+}
+
+.summary_and_greeting_div {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+    justify-content: center;
+}
+
+.greeting_div {
+    height: 136px;
+    width: 385px;
+    gap: 3px;
+    display: flex;
+    flex-direction: column;
+}
+
+#greeting {
+    height: 56px;
+    width: 338px;
+    font-size: 47px;
+    font-weight: 500;
+}
+
+#user_name {
+    height: 77px;
+    width: 385px;
+    font-size: 64px;
+    font-weight: 700;
+    color: #29ABE2;
 }

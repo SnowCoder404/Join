@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="../styles/pages/login.css">
     <link rel="stylesheet" href="../styles/pages/sign_up.css">
     <link rel="stylesheet" href="../styles/media_query.css">
+
     <script src="../scripts/script.js"></script>
     <script src="../scripts/add_user.js"></script>
 </head>
@@ -23,14 +24,14 @@
         </div>
     </header>
     <main class="d_flex_c">
+        <div>
+            <a href="../index.html" class="back-button-link">
+                <img src="../assets/img/back.svg" class="back-button"></img>
+            </a>
+        </div> 
         <form class="formDiv">
             <div class="text-center login-form w-100">
                 <div class="d_flex" style="padding: 24px; justify-content: flex-start;">
-                    <div>
-                        <a href="../index.html">
-                            <button class="back-button"></button>
-                        </a>
-                    </div> 
                     <div class="text-center" style="width: 280px;">
                         <h1>Sign up</h1>
                         <div class="separator"></div>
@@ -39,22 +40,22 @@
                 <div class="register-container">
                     <div class="d_flex">
                         <input id="name" type="text" placeholder="Name" class="w-100 input-font" required>
-                        <img src="" alt="">
+                        <img src="../assets/img/person.svg" alt="name" class="sign-up-image">
                     </div>
                 
                     <div class="d_flex">
                         <input id="email" type="email" placeholder="E-Mail" class="w-100 input-font" required>
-                        <img src="" alt="">
+                        <img src="../assets/img/mail.svg" alt="E-Mail" class="sign-up-image">
                    </div>
                   
-                   <div class="d_flex"></div>
+                   <div class="d_flex">
                         <input id="password" type="password" placeholder="Password" minlength="5" class="w-100 input-font" required>
-                        <img src="" alt="">
+                        <img src="../assets/img/lock.svg" alt="password" class="sign-up-image">
                     </div>
                     
                     <div class="d_flex">
                         <input id="passwordConfirm" type="password" placeholder="Confirm password" minlength="5" class="w-100 input-font" required>
-                        <img src="" alt="">
+                        <img src="../assets/img/lock.svg" alt="password" class="sign-up-image">
                     </div>
             
                     <div id="checkboxContainer">
