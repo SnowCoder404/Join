@@ -1,91 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Join</title>
 
-    <link rel="stylesheet" href="../styles/pages/summary.css" />
-    <link rel="stylesheet" href="../styles/flexbox.css" />
-    <link rel="stylesheet" href="../styles/base.css" />
-    <link rel="stylesheet" href="../styles/style.css" />
-    <link rel="stylesheet" href="../styles/media_query.css" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Join</title>
 
-    <script src="../scripts/summary.js" defer></script>
-    <script src="../scripts/template.js" defer></script>
-    <script src="../scripts/script.js" defer></script>
-  </head>
+  <link rel="stylesheet" href="../styles/pages/summary.css" />
+  <link rel="stylesheet" href="../styles/flexbox.css" />
+  <link rel="stylesheet" href="../styles/base.css" />
+  <link rel="stylesheet" href="../styles/style.css" />
+  <link rel="stylesheet" href="../styles/media_query.css" />
 
-  <body class="body" onload="loadSummary()">
-    <aside id="sidebar" class="sidebar"></aside>
+  <script src="../scripts/summary.js" defer></script>
+  <script src="../scripts/template.js" defer></script>
+  <script src="../scripts/script.js" defer></script>
+</head>
 
-    <main class="app-main">
-      <header class="header"></header>
+<body class="body" onload="loadSummary()">
+  <aside id="sidebar" class="sidebar"></aside>
 
-      <div class="container">
-        <div id="title_div" class="d_flex_c_c page_title_div">
-          <h1 class="title d_flex_c_c">Join 360</h1>
+  <main class="app-main">
+    <header class="header"></header>
+
+    <div class="container container_flex">
+      <div id="title_div" class="d_flex_c_c page_title_div">
+        <h1 class="title d_flex_c_c">Join 360</h1>
+        <div class="seperator_and_title_second">
           <div class="vertical_seperator_blue"></div>
           <span class="title_second color-blue">Key metrics at Glance</span>
         </div>
 
-        <div class="summary_and_greeting_div">
-          <div class="summary_content">
-            <div class="todo_and_done margin_b_20px">
-              <div class="todo-done_div">
-                <img src="../assets/icon/summary_todo.png" alt="" />
-                <div class="number_and_name">
-                  <span>anzahl</span>
-                  <span>to-do</span>
-                </div>
-              </div>
+      </div>
 
-              <div class="todo-done_div">
-                <img src="../assets/icon/summary_done.png" alt="" />
-                <div class="number_and_name">
-                  <span>anzahl</span>
-                  <span>done</span>
-                </div>
+      <div class="summary_and_greeting_div">
+        <div class="summary_content">
+          <div class="todo_and_done margin_b_20px">
+            <div class="todo-done_div">
+              <img src="../assets/icon/summary_todo.png" alt="" />
+              <div class="number_and_name">
+                <span>anzahl</span>
+                <span>to-do</span>
               </div>
             </div>
 
-            <div class="urgent_todos_div margin_b_20px">
-              <div class="urgent_todo">
-                <img src="../assets/icon/urgent_todo.png" alt="" />
-                <div class="number_and_name">
-                  <span>anzahl</span>
-                  <span>urgent</span>
-                </div>
-              </div>
-              <div class="vertical_seperator_gray"></div>
-              <div class="datum_and_info">
-                <div class="upcomming_deadline">datum bsp</div>
-                <span class="upcomming_deadline">Upcoming Deadline</span>
-              </div>
-            </div>
-
-            <div class="all_task_div">
-              <div class="number_and_name task_div">
+            <div class="todo-done_div">
+              <img src="../assets/icon/summary_done.png" alt="" />
+              <div class="number_and_name">
                 <span>anzahl</span>
-                <span>Tasks in Board</span>
-              </div>
-              <div class="number_and_name task_div">
-                <span>anzahl</span>
-                <span>Tasks in Progress</span>
-              </div>
-              <div class="number_and_name task_div">
-                <span>anzahl</span>
-                <span>Awaiting Feedback </span>
+                <span>done</span>
               </div>
             </div>
           </div>
 
-          <div class="greeting_div">
-            <span id="greeting">Good morning,</span>
-            <span id="user_name">name</span>
+          <div class="urgent_todos_div margin_b_20px">
+            <div class="urgent_todo">
+              <img src="../assets/icon/urgent_todo.png" alt="" />
+              <div class="number_and_name">
+                <span>anzahl</span>
+                <span>urgent</span>
+              </div>
+            </div>
+            <div class="vertical_seperator_gray"></div>
+            <div class="datum_and_info">
+              <div class="upcomming_deadline">datum bsp</div>
+              <span class="upcomming_deadline">Upcoming Deadline</span>
+            </div>
+          </div>
+
+          <div class="all_task_div">
+            <div class="number_and_name task_div">
+              <span>anzahl</span>
+              <span>Tasks in Board</span>
+            </div>
+            <div class="number_and_name task_div">
+              <span>anzahl</span>
+              <span>Tasks in Progress</span>
+            </div>
+            <div class="number_and_name task_div">
+              <span>anzahl</span>
+              <span>Awaiting Feedback </span>
+            </div>
           </div>
         </div>
+
+        <div class="greeting_div">
+          <span id="greeting">Good morning,</span>
+          <span id="user_name">name</span>
+        </div>
       </div>
-    </main>
-  </body>
+    </div>
+  </main>
+</body>
+
 </html>
