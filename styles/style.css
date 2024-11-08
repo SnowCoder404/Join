@@ -12,6 +12,7 @@
   height: 110px;
 } */
 
+/* DO NOT CHANGE ANYTHING */
 header {
   width: 100%;
   display: flex;
@@ -22,6 +23,7 @@ header {
   }
 }
 
+/* DO NOT CHANGE ANYTHING */
 .header-menu-button {
   height: 50px;
   width: 50px;
@@ -61,6 +63,7 @@ header {
 }
 
 /* SIDEBAR STYLE FOR ALL PAGES */
+/* DO NOT CHANGE ANYTHING */
 .sidebar {
   position: relative;
   padding: 64px 0;
