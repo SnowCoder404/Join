@@ -162,3 +162,55 @@
 }
 
 /* ** SUMMARY PAGE QUERIES ** */
+
+@media (max-width: 1300px){
+    .summary_and_greeting_div {
+        flex-direction: column-reverse;
+    }
+
+    .app-main {
+        align-items: center;
+    }
+
+    .greeting_div {
+        margin-bottom: 32px;
+    }
+
+}
+
+@media (max-width: 900px) {
+    .page_title_div {
+        flex-direction: column;
+        width: 223px;
+        height: 104px;
+        gap: 16px;
+    }
+
+    .title {
+        height: 56px;
+        width: 203px;
+        font-size: 47px;
+    }
+
+    .seperator_and_title_second {
+        flex-direction: column-reverse;
+    }
+
+    .title_second {
+        height: 24px;
+        width: 223px;
+
+        font-weight: 400;
+        font-size: 20px;
+    }
+
+    .vertical_seperator_blue {
+        height: 0px;
+        width: 90px;
+        align-self: self-start;
+    }
+
+    .greeting_div {
+        display: none;
+    }
+}
