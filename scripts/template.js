@@ -35,6 +35,7 @@ function sidebarShow() {
 
 function getHeaderHTML() {
   return `
+        <img class="logo-black" src="../assets/img/logo-black.png"  alt="logo"/>
         <h1>Kanban Project Management Tool</h1>
         <div class="profile">
          <a href="./help.html">

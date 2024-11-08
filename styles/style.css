@@ -13,8 +13,13 @@
 } */
 
 header {
+  width: 100%;
   display: flex;
   justify-content: space-between;
+
+  .logo-black {
+    display: none;
+  }
 }
 
 .header-menu-button {
