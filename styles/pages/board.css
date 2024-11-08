@@ -8,6 +8,10 @@
     align-items: center;
     column-gap: 50px;
   }
+
+  h1 {
+    font-size: 60px;
+  }
 }
 
 .board-searchBar {
