@@ -9,10 +9,10 @@
     <link rel="stylesheet" href="../styles/flexbox.css" />
     <link rel="stylesheet" href="../styles/base.css" />
     <link rel="stylesheet" href="../styles/media_query.css" />
-
-    <script src="../scripts/contact.js" defer></script>
-    <script src="../scripts/template.js" defer></script>
-    <script src="../scripts/script.js" defer></script>
+    <script src="../scripts/db.js"></script>
+    <script src="../scripts/contact.js"></script>
+    <script src="../scripts/template.js"></script>
+    <script src="../scripts/script.js"></script>
   </head>
 
   <body onload="loadContact()">
@@ -22,8 +22,12 @@
       <header class="header"></header>
 
       <div class="container">
-        <!-- Here comes your content -->
-        Here comes your content
+          <div class="d_flex">
+              <div>
+                  <img src="" alt="">
+              </div>
+              <div id="list-of-contacts" class="d_flex_column g_12"></div>
+          </div>
       </div>
     </main>
   </body>

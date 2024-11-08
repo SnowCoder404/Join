@@ -150,3 +150,16 @@ a {
     }
   }
 }
+
+.center-contacts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contacts-div {
+    background-color: white;
+    padding: 22px 73px;
+    gap: 50px;
+}

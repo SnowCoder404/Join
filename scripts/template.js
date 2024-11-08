@@ -133,3 +133,15 @@ function getAddTaskTemplate() {
                   </div>
               </div>`;
 }
+
+function getContactsTemplate(index) {
+    return `<div class="d_flex contacts-div">
+                <img>
+                <div class="center-contacts">
+                    <span>${contacts[index].name}</span>
+                    <span>${contacts[index].email}</span>
+                </div>
+            </div>
+    
+    `;
+}
