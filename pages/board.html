@@ -49,6 +49,7 @@
               <li class="empty-message">No tasks To do</li>
             </ul>
           </div>
+
           <div>
             <span>
               <h2>In progress</h2>
@@ -56,28 +57,93 @@
             </span>
             <ul>
               <li>
-                <span class="task-category">User Story</span>
+                <span class="task-category bg-dark-blue">User Story</span>
                 <h3 class="task-title">Kochwelt Page & Recipe Recommender</h3>
                 <p class="task-description">Build start page with recipe recommendation...</p>
+                <span class="progressbar">
+                  <progress value="1" max="3"></progress>
+                  <span class="subtasks-text">1/3 Subtasks</span>
+                </span>
+
+                <div class="task-assigned-container">
+                  <div class="assigned-users">
+                    <span class="bg-orange">AM</span>
+                    <span class="bg-turquoise">EM</span>
+                    <span class="bg-violet">MB</span>
+                  </div>
+                  <img src="../assets/icon/urgent-transparent.png" alt="priority icon" />
+                </div>
               </li>
             </ul>
           </div>
+
           <div>
             <span>
               <h2>Await feedback</h2>
               <img src="../assets/icon/plus-black.svg" alt="plus icon" />
             </span>
             <ul>
-              <li class="empty-message">No tasks for await feedback</li>
+              <!-- <li class="empty-message">No tasks for await feedback</li> -->
+              <li>
+                <span class="task-category bg-turquoise">Technical Task</span>
+                <h3 class="task-title">HTML Base Template Creation</h3>
+                <p class="task-description">Creation reusable HTML base templates..</p>
+                <span class="progressbar">
+                  <progress value="1" max="2"></progress>
+                  <span class="subtasks-text">1/2 Subtasks</span>
+                </span>
+
+                <div class="task-assigned-container">
+                  <div class="assigned-users">
+                    <span class="bg-pink">DE</span>
+                    <span class="bg-violet-light">BZ</span>
+                    <span class="bg-violet-light-2">AS</span>
+                  </div>
+                  <img src="../assets/icon/priority-low-transparent.png" alt="priority icon" />
+                </div>
+              </li>
+
+              <li>
+                <span class="task-category bg-dark-blue">User Story</span>
+                <h3 class="task-title">Daily Kochwelt Recipe</h3>
+                <p class="task-description">Implement daily recipe and portion calculator...</p>
+
+                <div class="task-assigned-container">
+                  <div class="assigned-users">
+                    <span class="bg-orange">EF</span>
+                    <span class="bg-violet-light">AS</span>
+                    <span class="bg-orange-dark">TW</span>
+                  </div>
+                  <img src="../assets/icon/urgent-transparent.png" alt="priority icon" />
+                </div>
+              </li>
             </ul>
           </div>
+
           <div>
             <span>
               <h2>Done</h2>
               <img src="../assets/icon/plus-black.svg" alt="plus icon" />
             </span>
             <ul>
-              <li class="empty-message">No tasks done</li>
+              <!-- <li class="empty-message">No tasks done</li> -->
+              <li>
+                <span class="task-category bg-turquoise">Technical Task</span>
+                <h3 class="task-title">CSS Architecture Planning</h3>
+                <p class="task-description">Define CSS naming convention and structure...</p>
+                <span class="progressbar">
+                  <progress value="2" max="2"></progress>
+                  <span class="subtasks-text">2/2 Subtasks</span>
+                </span>
+
+                <div class="task-assigned-container">
+                  <div class="assigned-users">
+                    <span class="bg-light-blue">SM</span>
+                    <span class="bg-violet-light-2">BZ</span>
+                  </div>
+                  <img src="../assets/icon/urgent-transparent.png" alt="priority icon" />
+                </div>
+              </li>
             </ul>
           </div>
         </div>

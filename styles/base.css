@@ -111,7 +111,39 @@ button {
 }
 
 .bg-light-blue {
-  background-color: rgb(41, 171, 226);
+  background-color: #29abe2;
+}
+
+.bg-orange {
+  background-color: #ff7a00;
+}
+
+.bg-turquoise {
+  background-color: #1fd7c1;
+}
+
+.bg-violet {
+  background-color: #462f8a;
+}
+
+.bg-pink {
+  background-color: #fc71ff;
+}
+
+.bg-violet-light {
+  background-color: #9327ff;
+}
+
+.bg-violet-light-2 {
+  background-color: #6e52ff;
+}
+
+.bg-dark-blue {
+  background-color: #0038ff;
+}
+
+.bg-orange-dark {
+  background-color: #ff4646;
 }
 
 .color-white {

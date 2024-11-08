@@ -180,6 +180,9 @@
     margin-bottom: 32px;
   }
 
+  .greeting_div {
+    margin-bottom: 32px;
+  }
 }
 
 @media (max-width: 900px) {
@@ -294,7 +297,6 @@
   .separator-max {
     display: none !important;
   }
-
   .main-div {
     flex-direction: column;
     align-items: center;
