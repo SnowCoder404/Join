@@ -164,136 +164,132 @@
 
 /* ** SUMMARY PAGE QUERIES ** */
 
-@media (max-width: 1300px){
-    .summary_and_greeting_div {
-        flex-direction: column-reverse;
-    }
+@media (max-width: 1300px) {
+  .summary_and_greeting_div {
+    flex-direction: column-reverse;
+  }
 
-    .app-main {
-        align-items: center;
-    }
+  .app-main {
+    align-items: center;
+  }
 
-    .greeting_div {
-        margin-bottom: 32px;
-    }
-
+  .greeting_div {
+    margin-bottom: 32px;
+  }
 }
 
 @media (max-width: 900px) {
-    .page_title_div {
-        flex-direction: column;
-        width: 223px;
-        height: 104px;
-        gap: 16px;
+  .page_title_div {
+    flex-direction: column;
+    width: 223px;
+    height: 104px;
+    gap: 16px;
+  }
+
+  .title {
+    height: 56px;
+    width: 203px;
+    font-size: 47px;
+  }
+
+  .seperator_and_title_second {
+    flex-direction: column-reverse;
+  }
+
+  .title_second {
+    height: 24px;
+    width: 223px;
+
+    font-weight: 400;
+    font-size: 20px;
+  }
+
+  .vertical_seperator_blue {
+    height: 0px;
+    width: 90px;
+    align-self: self-start;
+  }
+
+  .greeting_div {
+    display: none;
+  }
+
+  .todo_and_done {
+    width: 396px;
+    height: 110px;
+    border-radius: 20px;
+  }
+
+  .todo-done_div {
+    width: 186px;
+    height: 110px;
+    border-radius: 20px;
+    padding: 38px 19px;
+    gap: 10px;
+
+    img {
+      height: 40px;
+      width: 40px;
     }
+  }
 
-    .title {
-        height: 56px;
-        width: 203px;
-        font-size: 47px;
-    }
-
-    .seperator_and_title_second {
-        flex-direction: column-reverse;
-    }
-
-    .title_second {
-        height: 24px;
-        width: 223px;
-
-        font-weight: 400;
-        font-size: 20px;
-    }
-
-    .vertical_seperator_blue {
-        height: 0px;
-        width: 90px;
-        align-self: self-start;
-    }
-
-    .greeting_div {
-        display: none;
-    }
-
-    .todo_and_done {
-        width: 396px;
-        height: 110px;
-        border-radius: 20px;
-    }
-
-    .todo-done_div {
-        width: 186px;
-        height: 110px;
-        border-radius: 20px;
-        padding: 38px 19px;
-        gap: 10px;
-
-        img {
-            height: 40px;
-            width: 40px; 
-        }
-    }
-
-    .number_and_name {
-        width: 40px;
-        height: 73px;
-    }
+  .number_and_name {
+    width: 40px;
+    height: 73px;
+  }
 }
 
 /** Task QUERIES ** */
 
 @media (max-width: 1150px) {
   .separator-max {
-      display: none !important;
+    display: none !important;
   }
-  .main-div{
-      flex-direction: column;
-      align-items: center;
+  .main-div {
+    flex-direction: column;
+    align-items: center;
   }
   .media-w-300 {
-      width: 300px;
+    width: 300px;
   }
   .buttonTaskDiv {
-      flex-direction: column;
-      align-items: center;
+    flex-direction: column;
+    align-items: center;
   }
 
   #required-field-big {
-      display: none !important;
+    display: none !important;
   }
 }
 
 @media (min-width: 1150px) {
   #required-field {
-      display: none !important;
+    display: none !important;
   }
 }
 
 @media (max-width: 600px) {
-  #sidebar {
-      display: none !important;
-  }
   .add-task-main {
-      align-items: center;
-      height: 100vh;
+    align-items: center;
+    height: 100vh;
   }
   .hidden {
-      display: none !important;
+    display: none !important;
   }
   .buttonDiv {
-      flex-direction: column;
-      align-items: center;
+    flex-direction: column;
+    align-items: center;
   }
   .formDiv {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
   }
 }
 
 @media (min-width: 600px) {
   .hiddenMin {
-      display: none !important;
+    display: none !important;
   }
 }
