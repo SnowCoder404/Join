@@ -15,3 +15,24 @@
     margin: 0;
     padding: 20px;
 }
+
+.center-contacts > a {
+    color: blue;
+}
+
+.center-contacts > a:hover {
+    cursor: pointer;
+}
+
+.add-contact {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 16px;
+    border-radius: 12px;
+}
+
+.add-contact:hover {
+    cursor: pointer;
+    background-color: rgba(0, 0, 255, 0.5);
+}
