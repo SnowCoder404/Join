@@ -1,5 +1,6 @@
 function loadBoard() {
     loadSidebar();
+    loadHeader();
     showWhichSiteIsAktiv();
 }
 

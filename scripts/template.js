@@ -25,7 +25,12 @@ function sidebarShow() {
                       <span>Contacts</span>
                   </a>
               </div> 
-          </div>`;
+          </div>
+          <div class="privacy-container">
+        <a href="privacy_policy.html">Privacy Policy</a>
+        <a href="legal_notice.html">Legal notice</a>
+      </div>
+          `;
 }
 
 function getHeaderHTML() {
