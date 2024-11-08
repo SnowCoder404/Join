@@ -8,6 +8,7 @@ function loadTask() {
   loadSidebar();
   showWhichSiteIsAktiv();
   loadHeader();
+  document.getElementById("add-task").innerHTML = getAddTaskTemplate();
   mediumPrio();
   
 }
