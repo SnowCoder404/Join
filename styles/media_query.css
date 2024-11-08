@@ -270,9 +270,9 @@
 }
 
 @media (max-width: 600px) {
-  #sidebar {
+  /* #sidebar {
       display: none !important;
-  }
+  } */
   .add-task-main {
       align-items: center;
       height: 100vh;
