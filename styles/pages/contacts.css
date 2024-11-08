@@ -4,3 +4,14 @@
     width: 3px;
     margin: 0 18px;
 }
+
+.container {
+    margin: 0 !important;
+}
+
+.list-of-contacts {
+    height: 100vh;
+    background-color: white;
+    margin: 0;
+    padding: 20px;
+}

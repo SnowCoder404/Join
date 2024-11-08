@@ -3,6 +3,7 @@ function loadContact() {
     loadHeader();
     showWhichSiteIsAktiv();
     renderContacts();
+    extractTheWords();
 }
 
 function renderContacts() {
@@ -16,4 +17,20 @@ function showWhichSiteIsAktiv() {
     addClassToElement("task", "no-active");
     addClassToElement("board", "no-active");
     addClassToElement("contacts", "active");
+}
+
+function extractTheWords() {
+    for (let index = 0; index < contacts.length; index++) {
+        let contactName = document.getElementById("contact-name-" + index).innerText;
+        let firstLetter = document.getElementById("first-letter-" + index);
+        firstLetter.innerHTML = extractTheFirstLetter(contactName.split(" "));
+    }
+}
+
+function extractTheFirstLetter(word) {
+    let shortcut = "";
+    for (let index = 0; index < word.length; index++) {
+        shortcut += word[index][0]
+    }
+    return shortcut;
 }
