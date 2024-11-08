@@ -2,10 +2,12 @@
   .hidden {
     display: none !important;
   }
+
   .buttonDiv {
     flex-direction: column;
     align-items: center;
   }
+
   .formDiv {
     display: flex;
     flex-direction: column;
@@ -97,7 +99,7 @@
       margin-top: 0;
       padding: 0 1.2rem;
 
-      & > div {
+      &>div {
         width: 100px;
         height: fit-content;
         padding: 1.2rem 0;
@@ -130,18 +132,19 @@
     align-items: center;
     column-gap: 1.2rem;
 
-    & > a {
+    &>a {
       display: none;
     }
 
     .navigation {
       padding: 0.4rem;
 
-      & > div {
+      &>div {
         padding: 0.8rem 0.4rem;
 
         a {
           font-size: 12px;
+
           span {
             font-size: 14px;
           }
@@ -172,6 +175,10 @@
 
   .app-main {
     align-items: center;
+  }
+
+  .greeting_div {
+    margin-bottom: 32px;
   }
 
   .greeting_div {
@@ -238,6 +245,51 @@
     width: 40px;
     height: 73px;
   }
+
+  .urgent_todos_div {
+    width: 396px;
+    height: 110px;
+    border-radius: 20px;
+    gap: 20px;
+  }
+
+  .urgent_todo {
+    width: 108px;
+    height: 73px;
+    gap: 18px;
+
+    img {
+      width: 40px;
+      height: 40px;
+    }
+  }
+
+  .vertical_seperator_gray {
+    height: 68px;
+  }
+
+  .datum_and_info {
+    width: 135px;
+    height: 44px;
+    gap: 8px;
+  }
+
+  .all_task_div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 116px;
+    width: 396px;
+  }
+
+  .task_div {
+    height: 116px;
+    width: 116px;
+    border-radius: 20px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    gap: 13px;
+}
 }
 
 /** Task QUERIES ** */
@@ -250,9 +302,11 @@
     flex-direction: column;
     align-items: center;
   }
+
   .media-w-300 {
     width: 300px;
   }
+
   .buttonTaskDiv {
     flex-direction: column;
     align-items: center;
@@ -270,17 +324,24 @@
 }
 
 @media (max-width: 600px) {
+
+  /* #sidebar {
+      display: none !important;
+  } */
   .add-task-main {
     align-items: center;
     height: 100vh;
   }
+
   .hidden {
     display: none !important;
   }
+
   .buttonDiv {
     flex-direction: column;
     align-items: center;
   }
+
   .formDiv {
     display: flex;
     flex-direction: column;

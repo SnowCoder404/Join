@@ -1,3 +1,7 @@
+body {
+  display: block !important;
+}
+
 .buttonDiv {
   display: flex;
   justify-content: space-around;
