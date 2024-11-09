@@ -31,8 +31,22 @@
 }
 
 @media (max-width: 1250px) {
-  .back-button-contacts{
+  .list-of-contacts {
+      width: 100%;
+  }
+  .back-button-contacts {
       display: flex !important;
+  }
+  .title-of-contacs {
+    flex-direction: column;
+  }
+  .contact-separator {
+      display: none;
+  }
+  .responsive-separator {
+      height: 3px;
+      width: 87px;
+      background-color:rgb(41, 171, 226);
   }
   .big-content {
       position: absolute;
@@ -79,11 +93,8 @@
       color: transparent !important;
   }
   .add-contact-div {
-      position: fixed;
-      bottom: 15%;
-      padding: 0px 330px;
+      bottom: 15% !important;
   }
-
   .app-main {
     width: 100%;
     height: calc(100vh - 100px);
@@ -194,6 +205,17 @@
 /* ** SUMMARY PAGE QUERIES ** */
 
 @media (max-width: 1300px) {
+  .add-contact-div {
+      position: absolute;
+      bottom: 0;
+      right: 5%;
+  }
+  .add-contact {
+      height: 60px;
+      width: 60px;
+      border-radius: 30px !important;
+      color: transparent !important;
+  } 
   .summary_and_greeting_div {
     flex-direction: column-reverse;
   }
@@ -320,6 +342,14 @@
 /** Task QUERIES ** */
 
 @media (max-width: 1150px) {
+  .more-button-div {
+      position: fixed;
+      bottom: 1%;
+      right: 5%;
+  }
+  .delete-and-edit {
+    display: none !important;
+  }
   .container {
     width: 100%;
   }
@@ -348,6 +378,9 @@
 @media (min-width: 1150px) {
   #required-field {
     display: none !important;
+  }
+  .more-button-div {
+      display: none;
   }
 }
 
@@ -387,5 +420,8 @@
   .add-contact-div {
       padding: 0;
       right: 12%;
+  }
+  .contacts-div {
+    padding: 22px 8px;
   }
 }

@@ -34,3 +34,8 @@ function toggleHeaderMenu() {
   const menu = document.querySelector('.header-menu');
   menu.classList.toggle('show-element');
 }
+
+function addContact() {
+    document.getElementById("add-contact-menu").classList.remove("d_none");
+    document.getElementById("add-contact-menu").innerHTML = getAddContactsTemplate();
+}

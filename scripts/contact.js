@@ -41,3 +41,7 @@ function moreInfomationOfContact(numberOfContact) {
     document.getElementById("more-information").innerHTML = getMoreInfomationTemplate(numberOfContact);
     document.getElementById("first-big-letter-" + numberOfContact).innerHTML = extractTheFirstLetter(contactName.split(" "));
 }
+
+function disableMoreInformation() {
+    document.getElementById("big-content").classList.add("d_none");
+}

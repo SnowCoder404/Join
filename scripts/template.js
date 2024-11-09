@@ -139,7 +139,7 @@ function getContactsTemplate(index) {
                 <span id="first-letter-${index}" class="first-letter" style="background-color:${contacts[index].color};"></span>
                 <div class="center-contacts">
                     <span id="contact-name-${index}">${contacts[index].name}</span>
-                    <a href="mailto:${contacts[index].email}"><span class="email">${contacts[index].email}</span></a>
+                    <a><span class="email">${contacts[index].email}</span></a>
                 </div>
             </div>
     
@@ -154,11 +154,11 @@ function getMoreInfomationTemplate(numberOfContact) {
                 <div class="d_flex_column">
                     <span class="bold" style="font-size: 34px;">${contacts[numberOfContact].name}</span>
                     <div class="d_flex g_12">
-                        <div class="d_flex_c_c">
+                        <div class="d_flex_c_c delete-and-edit">
                             <img src="../assets/icon/edit.svg"></img>
                             <span>Edit</span>
                         </div>
-                        <div class="d_flex_c_c">
+                        <div class="d_flex_c_c delete-and-edit">
                             <img src="../assets/icon/delete.svg"></img>
                             <span>Delete</span>
                         </div>
@@ -179,5 +179,50 @@ function getMoreInfomationTemplate(numberOfContact) {
                       <span class="bold">Role</span>
                       <span class="p_12">${contacts[numberOfContact].role}</span>
                   </div>
+              </div>
+              <div class="more-button-div">
+                  <div class="more-button">
+                      <img src="../assets/img/show_more.svg" style="width: 12px;">            
+                  </div>
               </div>`;
+}
+
+function getAddContactsTemplate() {
+    return `<div>
+                <div>
+                    <img>
+                    <div>
+                        <h1>Add contact</h1>
+                        <h2>Tasks are better with a team!</h2>
+                        <div></div>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <img>
+                    </div>
+                    <div>
+                        <div>
+                            <input>
+                            <img>
+                        </div>
+                        <div>
+                            <input>
+                            <img>
+                        </div>
+                        <div>
+                            <input>
+                            <img>
+                        </div>
+                        <div>
+                            <div>
+                                <button></button><img>
+                            </div>
+                            <div>
+                                <button></button><img>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>`;
 }

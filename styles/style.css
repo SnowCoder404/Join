@@ -199,3 +199,20 @@ a {
 .p_12 {
     padding: 12px 0px;
 }
+
+.more-button {
+    background-color: darkblue;
+    width: 58px;
+    height: 58px;
+    display: flex;
+    justify-content: center;
+    border-radius: 32px;
+}
+
+.add-contact-overlay {
+    position: absolute;
+    top: 30%;
+    right: 3%;
+    width: 85vw;
+    background-color:#091931;
+}
