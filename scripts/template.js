@@ -133,3 +133,96 @@ function getAddTaskTemplate() {
                   </div>
               </div>`;
 }
+
+function getContactsTemplate(index) {
+    return `<div onclick="moreInfomationOfContact(${index})" class="d_flex_c_c contacts-div first-letter-hover">
+                <span id="first-letter-${index}" class="first-letter" style="background-color:${contacts[index].color};"></span>
+                <div class="center-contacts">
+                    <span id="contact-name-${index}">${contacts[index].name}</span>
+                    <a><span class="email">${contacts[index].email}</span></a>
+                </div>
+            </div>
+    
+    `;
+}
+
+function getMoreInfomationTemplate(numberOfContact) {
+    return `<div class="d_flex_c_c g_12">
+                <div style="padding: 85px 25px;">
+                    <span id="first-big-letter-${numberOfContact}" class="first-big-letter" style="background-color:${contacts[numberOfContact].color};"></span>
+                </div>
+                <div class="d_flex_column">
+                    <span class="bold" style="font-size: 34px;">${contacts[numberOfContact].name}</span>
+                    <div class="d_flex g_12">
+                        <div class="d_flex_c_c delete-and-edit">
+                            <img src="../assets/icon/edit.svg"></img>
+                            <span>Edit</span>
+                        </div>
+                        <div class="d_flex_c_c delete-and-edit">
+                            <img src="../assets/icon/delete.svg"></img>
+                            <span>Delete</span>
+                        </div>
+                    </div>
+                </div>
+              </div>
+              <div>
+                  <span class="bold">Contact Information</span>
+                  <div class="d_flex_column" style="padding-top: 40px;">
+                      <span class="bold">Email</span>
+                      <a href="mailto:${contacts[numberOfContact].email}" class="p_12"><span class="email">${contacts[numberOfContact].email}</span></a>
+                  </div>
+                  <div class="d_flex_column">
+                      <span class="bold">Phone</span>
+                      <a href="tel:${contacts[numberOfContact].phone}" class="p_12 color-black"><span>${contacts[numberOfContact].phone}</span></a>
+                  </div>
+                  <div class="d_flex_column">
+                      <span class="bold">Role</span>
+                      <span class="p_12">${contacts[numberOfContact].role}</span>
+                  </div>
+              </div>
+              <div class="more-button-div">
+                  <div class="more-button">
+                      <img src="../assets/img/show_more.svg" style="width: 12px;">            
+                  </div>
+              </div>`;
+}
+
+function getAddContactsTemplate() {
+    return `<div>
+                <div>
+                    <img>
+                    <div>
+                        <h1>Add contact</h1>
+                        <h2>Tasks are better with a team!</h2>
+                        <div></div>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <img>
+                    </div>
+                    <div>
+                        <div>
+                            <input>
+                            <img>
+                        </div>
+                        <div>
+                            <input>
+                            <img>
+                        </div>
+                        <div>
+                            <input>
+                            <img>
+                        </div>
+                        <div>
+                            <div>
+                                <button></button><img>
+                            </div>
+                            <div>
+                                <button></button><img>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>`;
+}

@@ -13,8 +13,7 @@ body {
   display: flex;
 }
 
-input,
-button {
+input, button {
   font-family: inherit;
 }
 
@@ -144,6 +143,10 @@ button {
 
 .bg-orange-dark {
   background-color: #ff4646;
+}
+
+.color-black {
+  color: black;
 }
 
 .color-white {

@@ -5,18 +5,32 @@
  */
 
 function loadTask() {
-  loadSidebar();
-  showWhichSiteIsAktiv();
-  loadHeader();
-  document.getElementById("add-task").innerHTML = getAddTaskTemplate();
-  mediumPrio();
+    loadSidebar();
+    showWhichSiteIsAktiv();
+    loadHeader();
+    document.getElementById("add-task").innerHTML = getAddTaskTemplate();
+    loadUserlist();
+    mediumPrio();
+  
 }
 
 /**
- *
- *  The function is for the sidebar and show which page is current.
- *
+ * 
+ * The function load all user from the userlist in the assigned to field.
+ * 
  */
+
+function loadUserlist() {
+    for (let index = 0; index < contacts.length; index++) {
+        document.getElementById("userlist").innerHTML += getUserListTemplate(index, contacts[index].name);
+    }
+}
+
+/**
+* 
+*  The function is for the sidebar and show which page is current.
+*  
+*/
 
 function showWhichSiteIsAktiv() {
   addClassToElement('summary', 'no-active');
