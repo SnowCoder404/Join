@@ -24,7 +24,22 @@
 
 /** SIDEBAR QUERIES ** */
 
+@media (min-width: 1250px) {
+  .big-content {
+      display: flex !important;
+  }
+}
+
 @media (max-width: 1250px) {
+  .back-button-contacts{
+      display: flex !important;
+  }
+  .big-content {
+      position: absolute;
+      background-color: white;
+      width: 100vw;
+      height: 100vh;
+  }
   .app-main {
     width: calc(100% - 200px);
 
@@ -56,6 +71,17 @@
     display: flex;
     align-items: center;
     flex-direction: column-reverse;
+  }
+  .add-contact {
+      width: 60px;
+      height: 60px;
+      border-radius: 30px !important;
+      color: transparent !important;
+  }
+  .add-contact-div {
+      position: fixed;
+      bottom: 15%;
+      padding: 0px 330px;
   }
 
   .app-main {
@@ -294,6 +320,9 @@
 /** Task QUERIES ** */
 
 @media (max-width: 1150px) {
+  .container {
+    width: 100%;
+  }
   .separator-max {
     display: none !important;
   }
@@ -323,7 +352,6 @@
 }
 
 @media (max-width: 600px) {
-
   /* #sidebar {
       display: none !important;
   } */
@@ -352,5 +380,12 @@
 @media (min-width: 600px) {
   .hiddenMin {
     display: none !important;
+  }
+}
+
+@media (max-width: 500px) {
+  .add-contact-div {
+      padding: 0;
+      right: 12%;
   }
 }

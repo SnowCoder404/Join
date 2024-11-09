@@ -145,6 +145,10 @@ input, button {
   background-color: #ff4646;
 }
 
+.color-black {
+  color: black;
+}
+
 .color-white {
   color: white;
 }

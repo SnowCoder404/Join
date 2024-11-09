@@ -23,6 +23,10 @@ header {
   }
 }
 
+.container {
+    width: 100%;
+}
+
 /* DO NOT CHANGE ANYTHING */
 .header-menu-button {
   height: 50px;
@@ -167,4 +171,31 @@ a {
 .first-letter {
     padding: 12px;
     border-radius: 24px;
+}
+
+.first-big-letter {
+    padding: 40px;
+    border-radius: 50px;
+    font-size: 22px;
+    color: white;
+}
+
+.first-letter-hover:hover {
+    cursor: pointer;
+}
+
+.email {
+    color: blue;
+}
+
+.email:hover {
+    cursor: pointer;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.p_12 {
+    padding: 12px 0px;
 }

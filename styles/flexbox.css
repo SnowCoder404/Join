@@ -3,7 +3,7 @@
 }
 
 .d_none {
-  display: none;
+  display: none !important;
 }
 
 .d_flex_c {

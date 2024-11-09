@@ -16,10 +16,6 @@
     padding: 20px;
 }
 
-.center-contacts > a {
-    color: blue;
-}
-
 .center-contacts > a:hover {
     cursor: pointer;
 }

@@ -34,3 +34,10 @@ function extractTheFirstLetter(word) {
     }
     return shortcut;
 }
+
+function moreInfomationOfContact(numberOfContact) {
+    let contactName = document.getElementById("contact-name-" + numberOfContact).innerText;
+    document.getElementById("big-content").classList.remove("d_none");
+    document.getElementById("more-information").innerHTML = getMoreInfomationTemplate(numberOfContact);
+    document.getElementById("first-big-letter-" + numberOfContact).innerHTML = extractTheFirstLetter(contactName.split(" "));
+}
